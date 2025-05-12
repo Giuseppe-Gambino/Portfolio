@@ -2,3 +2,68 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-[55.4px] font-bold;
+  }
+  h2 {
+    @apply text-[46.7px] font-semibold;
+  }
+  h3 {
+    @apply text-[34px] font-semibold;
+  }
+  h4 {
+    @apply text-[27.7px] font-medium;
+  }
+  h5 {
+    @apply text-[23.7] font-medium;
+  }
+  h6 {
+    @apply text-base font-medium;
+  }
+}
+
+@font-face {
+  font-family: "Agrandir";
+  src: url("/assets/fonts/PPAgrandir-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Agrandir";
+  src: url("/assets/fonts/PPAgrandirText-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Agrandir";
+  src: url("/assets/fonts/PPAgrandir-WideLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Agrandir";
+  src: url("/assets/fonts/PPAgrandir-GrandHeavy.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Variante corsiva (opzionale) */
+@font-face {
+  font-family: "Agrandir";
+  src: url("/assets/fonts/PPAgrandir-WideBlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Moontime (presumibilmente una sola variante) */
+@font-face {
+  font-family: "Moontime";
+  src: url("/assets/fonts/moon-time-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -8,8 +8,4 @@ import { gsap } from 'gsap';
 })
 export class AppComponent {
   title = 'Portfolio';
-
-  ngAfterViewInit() {
-    gsap.to('.box', { rotation: 360, duration: 2 });
-  }
 }
