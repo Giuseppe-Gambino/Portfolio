@@ -58,7 +58,7 @@ export class HomeComponent implements OnInit {
       scrollTrigger: {
         trigger: '.skills',
         scrub: true,
-        markers: true,
+
         start: 'center 60%',
         onEnter: () => this.navAn.show(),
         onLeaveBack: () => this.navAn.hide(),
