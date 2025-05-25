@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { NavAnimationService } from '../../mainComponent/navbar/nav-animation.service';
 gsap.registerPlugin(ScrollTrigger);
 
 @Component({
@@ -9,6 +10,8 @@ gsap.registerPlugin(ScrollTrigger);
   styleUrl: './home.component.scss',
 })
 export class HomeComponent implements OnInit {
+  constructor(private navAn: NavAnimationService) {}
+
   ngAfterViewInit() {
     gsap.from('.hero-text', { x: -200, duration: 0.5, opacity: 0 });
   }
@@ -49,6 +52,17 @@ export class HomeComponent implements OnInit {
       },
       delay: 5.5,
       opacity: 1,
+    });
+
+    gsap.to('.skills', {
+      scrollTrigger: {
+        trigger: '.skills',
+        scrub: true,
+        markers: true,
+        start: 'center 60%',
+        onEnter: () => this.navAn.show(),
+        onLeaveBack: () => this.navAn.hide(),
+      },
     });
   }
 }
