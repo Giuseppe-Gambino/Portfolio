@@ -22,16 +22,12 @@ export class NavbarComponent implements OnInit {
           animation: 'ease-in-out',
           duration: 0.5,
         });
-
-        console.log('Navbar opened');
       } else {
         gsap.to('.nav-bar', {
           y: -200,
           animation: 'ease-in-out',
           duration: 0.5,
         });
-
-        console.log('Navbar closed');
       }
     });
   }
