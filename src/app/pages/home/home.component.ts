@@ -78,7 +78,6 @@ export class HomeComponent implements OnInit {
       scrollTrigger: {
         trigger: '.text-skills',
         start: 'top 100rem',
-        markers: true,
         onEnter: () => this.stopOneSec(),
       },
     });
@@ -91,6 +90,18 @@ export class HomeComponent implements OnInit {
         start: 'center 60%',
         onEnter: () => this.navAn.show(),
         onLeaveBack: () => this.navAn.hide(),
+      },
+    });
+
+    gsap.to('.infinity-text', {
+      xPercent: -100,
+      ease: 'linear',
+      scrollTrigger: {
+        trigger: '.infinity-text',
+        scrub: 1,
+        start: 'top bottom',
+        end: 'top top',
+        markers: true,
       },
     });
   }
