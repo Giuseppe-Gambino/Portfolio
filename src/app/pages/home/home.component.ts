@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
     this.lenis.stop();
     setTimeout(() => {
       this.lenis.start();
-    }, 1000);
+    }, 500);
   }
 
   ngOnInit(): void {

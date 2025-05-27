@@ -4,6 +4,7 @@ import {
   ViewChild,
   HostListener,
   AfterViewInit,
+  OnInit,
 } from '@angular/core';
 import gsap from 'gsap';
 
@@ -12,7 +13,17 @@ import gsap from 'gsap';
   templateUrl: './magnetic-button.component.html',
   styleUrl: './magnetic-button.component.scss',
 })
-export class MagneticButtonComponent {
+export class MagneticButtonComponent implements OnInit {
+  rotateTl = gsap.timeline({ repeat: -1, paused: true });
+
+  ngOnInit(): void {
+    this.rotateTl.to('.magBut', {
+      rotation: 360,
+      duration: 10,
+      ease: 'none',
+    });
+  }
+
   @ViewChild('magBut', { static: true }) button!: ElementRef<HTMLButtonElement>;
   private boundingRect!: DOMRect;
   private isHovering = false;
@@ -30,6 +41,7 @@ export class MagneticButtonComponent {
   onMouseEnter(event: MouseEvent) {
     this.isHovering = true;
     this.boundingRect = this.button.nativeElement.getBoundingClientRect();
+    this.rotateTl.play();
   }
 
   @HostListener('mousemove', ['$event'])
@@ -59,6 +71,13 @@ export class MagneticButtonComponent {
       y: 0,
       duration: 0.5,
       ease: 'elastic.out(1, 0.3)',
+    });
+
+    this.rotateTl.pause();
+    gsap.to('.magBut', {
+      rotation: 0,
+      duration: 0.2,
+      ease: 'none',
     });
   }
 }
