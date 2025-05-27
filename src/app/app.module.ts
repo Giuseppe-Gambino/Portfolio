@@ -6,19 +6,17 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './mainComponent/navbar/navbar.component';
 import { FooterComponent } from './mainComponent/footer/footer.component';
 import { NotificationComponent } from './mainComponent/notification/notification.component';
+import { MagneticButtonComponent } from './shared/magnetic-button/magnetic-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    NotificationComponent
+    NotificationComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

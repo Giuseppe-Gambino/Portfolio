@@ -1,5 +1,5 @@
-import { AfterContentInit, Component, OnInit } from '@angular/core';
-import { gsap, normalize } from 'gsap';
+import { Component, OnInit } from '@angular/core';
+import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { NavAnimationService } from '../../mainComponent/navbar/nav-animation.service';
 import ScrollSmoother from 'gsap/ScrollSmoother';

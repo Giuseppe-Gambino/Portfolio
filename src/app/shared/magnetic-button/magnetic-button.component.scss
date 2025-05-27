@@ -1,0 +1,31 @@
+.magBut {
+  position: relative;
+}
+
+.magBut::after {
+  content: "";
+  position: absolute;
+  top: 50;
+  left: 50;
+  width: 0;
+  height: 0;
+  z-index: 1000;
+  background-color: rgb(194, 194, 194);
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.magBut:hover::after {
+  width: 100%;
+  height: 100%;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.circle-text .p {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%) translateY(-50%);
+
+  transform-origin: 0 -70px; /* raggio */
+}
