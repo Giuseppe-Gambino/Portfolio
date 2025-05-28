@@ -82,6 +82,14 @@ export class HomeComponent implements OnInit {
       },
     });
 
+    gsap.to('.projects-text', {
+      scrollTrigger: {
+        trigger: '.projects-text',
+        start: 'top 100rem',
+        onEnter: () => this.stopOneSec(),
+      },
+    });
+
     gsap.to('.skills', {
       scrollTrigger: {
         trigger: '.skills',

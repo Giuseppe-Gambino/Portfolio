@@ -19,6 +19,7 @@ export class MagneticButtonComponent implements OnInit {
 
   @Input() circleText!: string;
   @Input() buttonText!: string;
+  @Input() buttonColor: string = '#242424';
 
   charArr: string[] = [];
   angle: number = 360;

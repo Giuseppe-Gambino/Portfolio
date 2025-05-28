@@ -30,11 +30,14 @@
   >
     <div>
       <h1>About me</h1>
-      <h3>Full Stack Developer</h3>
+      <h3 class="font-semibold mb-2 -mt-1">Full Stack Developer</h3>
       <p class="text-3xl max-w-[45rem]">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unemaining essentially unchanged.
+        Ciao!👋 Sono Giuseppe Gambino, ho 22 anni e sono un Junior Full Stack
+        Developer. Appassionato di tecnologia, design e sviluppo web, amo
+        trasformare idee in interfacce dinamiche e funzionali.
+        <br /><br />
+        Cerco sempre di crescere, imparare e costruire esperienze digitali
+        curate e moderne.
       </p>
     </div>
     <div class="flex justify-between">
@@ -96,7 +99,7 @@
 </div>
 <section class="h-[105vh] bg-[#242424] shadow-2xl">
   <section class="container pt-44 flex justify-between">
-    <div class="text-skills">
+    <div class="projects-text">
       <h1>Ultimi Progetti</h1>
       <p class="max-w-[25.5rem] text-xl font-agrandir opacity-50 mt-12">
         Questi sono alcuni dei progetti più recenti che ho realizzato,
@@ -108,5 +111,95 @@
       </p>
     </div>
     <div class="h-[60vh] w-[120vh] mt-24 mx-32 border"></div>
+  </section>
+</section>
+<!-- sezione contattami -->
+<section class="h-[100vh] bg-[#242424] shadow-2xl relative">
+  <section class="container border h-full flex pt-[14%]">
+    <h1
+      class="absolute top-0 z-10 text-[20.4rem] font-agrandir font-bold opacity-15 -ms-4 -mt-16 tracking-tighter"
+    >
+      Contattami
+    </h1>
+    <!-- text + contatti -->
+    <div class="w-1/3">
+      <p class="max-w-[25.5rem] text-xl font-agrandir opacity-50 mt-16">
+        "Hai un progetto in mente o vuoi collaborare? Scrivimi!"
+        <br /><br />
+        "Sarò felice di ascoltare la tua idea o rispondere a qualsiasi domanda!
+      </p>
+    </div>
+    <!-- form di contatto -->
+    <div class="z-20 w-2/3">
+      <form class="flex flex-col gap-12">
+        <div class="flex justify-between gap-7">
+          <div class="flex flex-col items-start w-full">
+            <label
+              for="name"
+              class="text-2xl text-white font-bold font-agrandir"
+              >Nome</label
+            >
+            <input
+              type="text"
+              class="w-[98%] px-4 pt-5 pl-0 bg-transparent border-b-2 outline-none"
+            />
+          </div>
+          <div class="flex flex-col items-start w-full">
+            <label
+              for="name"
+              class="text-2xl text-white font-bold font-agrandir"
+              >Email</label
+            >
+            <input
+              type="text"
+              class="w-[98%] px-4 pt-5 pl-0 bg-transparent border-b-2 outline-none"
+            />
+          </div>
+        </div>
+        <div class="flex justify-between gap-7">
+          <div class="flex flex-col items-start w-full">
+            <label
+              for="name"
+              class="text-2xl text-white font-bold font-agrandir"
+              >Oggetto</label
+            >
+            <input
+              type="text"
+              class="w-[98%] px-4 pt-5 pl-0 bg-transparent border-b-2 outline-none"
+            />
+          </div>
+          <div class="flex flex-col items-start w-full">
+            <label
+              for="name"
+              class="text-2xl text-white font-bold font-agrandir"
+              >Allegato</label
+            >
+            <input
+              type="text"
+              class="w-[98%] px-4 pt-5 pl-0 bg-transparent border-b-2 outline-none"
+            />
+          </div>
+        </div>
+        <div class="flex items-start gap-4 mt-6">
+          <div class="flex flex-col items-start w-full">
+            <label
+              for="name"
+              class="text-2xl text-white font-bold font-agrandir"
+              >Di cosa hai bisogno?</label
+            >
+            <textarea
+              type="text"
+              class="w-full px-4 pt-5 pl-0 bg-transparent border-b-2 outline-none h-52 mb-8"
+            ></textarea>
+          </div>
+          <app-magnetic-button
+            class="ms-10 self-end"
+            buttonColor="#25bbb2"
+            circleText="SEND    •••    SEND    •••    SEND    •••    "
+            buttonText="INVIA"
+          ></app-magnetic-button>
+        </div>
+      </form>
+    </div>
   </section>
 </section>
