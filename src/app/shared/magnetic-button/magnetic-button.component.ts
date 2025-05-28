@@ -5,6 +5,7 @@ import {
   HostListener,
   AfterViewInit,
   OnInit,
+  Input,
 } from '@angular/core';
 import gsap from 'gsap';
 
@@ -16,12 +17,21 @@ import gsap from 'gsap';
 export class MagneticButtonComponent implements OnInit {
   rotateTl = gsap.timeline({ repeat: -1, paused: true });
 
+  @Input() circleText!: string;
+  @Input() buttonText!: string;
+
+  charArr: string[] = [];
+  angle: number = 360;
+
   ngOnInit(): void {
     this.rotateTl.to('.magBut', {
       rotation: 360,
       duration: 10,
       ease: 'none',
     });
+
+    this.charArr = this.circleText.split('');
+    this.angle = 360 / this.charArr.length;
   }
 
   @ViewChild('magBut', { static: true }) button!: ElementRef<HTMLButtonElement>;
