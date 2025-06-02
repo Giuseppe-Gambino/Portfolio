@@ -17,6 +17,22 @@ export class HomeComponent implements OnInit {
     private lenis: LenisService
   ) {}
 
+  skills: string[] = [
+    'angular.png',
+    'tailwind.png',
+    'sass.png',
+    'html.png',
+    'ts.png',
+    'springboot.png',
+    'java.png',
+    'postgresql.png',
+    'github.png',
+    'css.png',
+    'gsap.png',
+    'bootstrap.png',
+    'js.png',
+  ];
+
   ngAfterViewInit() {
     gsap.from('.hero-text', { x: -200, duration: 0.5, opacity: 0 });
   }
@@ -109,7 +125,6 @@ export class HomeComponent implements OnInit {
         scrub: 1,
         start: 'top bottom',
         end: 'top top',
-        markers: true,
       },
     });
   }

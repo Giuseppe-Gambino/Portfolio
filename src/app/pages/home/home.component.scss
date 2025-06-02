@@ -10,3 +10,55 @@
 .setup {
   background-image: url("/SetUp.png");
 }
+
+.skill:nth-child(1) {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.skill:nth-child(2) {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.skill:nth-child(3) {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.skill:nth-child(4) {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.skill:nth-child(5) {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.skill:nth-child(6) {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.skill:nth-child(7) {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.skill:nth-child(8) {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.skill:nth-child(9) {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.skill:nth-child(10) {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.skill:nth-child(11) {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+.skill:nth-child(12) {
+  grid-area: 3 / 4 / 4 / 5;
+}
+
+.skill:nth-child(13) {
+  grid-area: 4 / 1 / 5 / 2;
+}

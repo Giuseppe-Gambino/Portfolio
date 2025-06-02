@@ -69,7 +69,16 @@
       tecnologie con cui lavoro.
     </p>
   </div>
-  <div class="h-[70vh] w-[100vh] mt-24 mx-32 border"></div>
+  <div
+    class="h-[70vh] w-[100vh] mt-24 mx-32 grid justify-items-center grid-cols-[repeat(3,1fr)] xl:grid-cols-[repeat(4,1fr)] grid-rows-[repeat(4,1fr)] gap-y-[10px] gap-x-[10px]"
+  >
+    <div
+      *ngFor="let item of skills"
+      class="rounded-xl bg-gradient-to-r from-white to-gray-400 border border-white h-[15vh] w-[20vh] flex items-center justify-center"
+    >
+      <img [src]="item" class="h-16" />
+    </div>
+  </div>
 </section>
 <!-- sezione progetti -->
 <div class="bg-orange-500 mt-20 h-20 gap-3 overflow-hidden -rotate-1 -mb-5">
@@ -99,23 +108,30 @@
 </div>
 <section class="h-[105vh] bg-[#242424] shadow-2xl">
   <section class="container pt-44 flex justify-between">
-    <div class="projects-text">
-      <h1>Ultimi Progetti</h1>
-      <p class="max-w-[25.5rem] text-xl font-agrandir opacity-50 mt-12">
-        Questi sono alcuni dei progetti più recenti che ho realizzato,
-        utilizzando tecnologie moderne e seguendo buone pratiche di sviluppo.
-        <br />
-        <br />
-        Ogni progetto rappresenta un’occasione in cui ho messo in pratica le mie
-        competenze in frontend e/o backend."
-      </p>
+    <div class="projects-text flex flex-col justify-between">
+      <div>
+        <h1>Ultimi Progetti</h1>
+        <p class="max-w-[25.5rem] text-xl font-agrandir opacity-50 mt-12">
+          Questi sono alcuni dei progetti più recenti che ho realizzato,
+          utilizzando tecnologie moderne e seguendo buone pratiche di sviluppo.
+          <br />
+          <br />
+          Ogni progetto rappresenta un’occasione in cui ho messo in pratica le
+          mie competenze in frontend e/o backend."
+        </p>
+      </div>
+      <app-magnetic-button
+        circleText="VEDI ALTRO ••• VEDI ALTRO ••• VEDI ALTRO ••• "
+        buttonText="VEDI ALTRO"
+        buttonColor="#25bbb2"
+      ></app-magnetic-button>
     </div>
     <div class="h-[60vh] w-[120vh] mt-24 mx-32 border"></div>
   </section>
 </section>
 <!-- sezione contattami -->
 <section class="h-[100vh] bg-[#242424] shadow-2xl relative">
-  <section class="container border h-full flex pt-[14%]">
+  <section class="container h-full flex pt-[14%]">
     <h1
       class="absolute top-0 z-10 text-[20.4rem] font-agrandir font-bold opacity-15 -ms-4 -mt-16 tracking-tighter"
     >
@@ -123,7 +139,7 @@
     </h1>
     <!-- text + contatti -->
     <div class="w-1/3">
-      <p class="max-w-[25.5rem] text-xl font-agrandir opacity-50 mt-16">
+      <p class="max-w-[25.5rem] text-2xl font-agrandir opacity-50 mt-20">
         "Hai un progetto in mente o vuoi collaborare? Scrivimi!"
         <br /><br />
         "Sarò felice di ascoltare la tua idea o rispondere a qualsiasi domanda!
@@ -136,23 +152,25 @@
           <div class="flex flex-col items-start w-full">
             <label
               for="name"
-              class="text-2xl text-white font-bold font-agrandir"
+              class="text-3xl text-white font-bold font-agrandir"
               >Nome</label
             >
             <input
               type="text"
-              class="w-[98%] px-4 pt-5 pl-0 bg-transparent border-b-2 outline-none"
+              value="ciao"
+              class="w-[98%] text-2xl mt-2 pb-2 pt-5 pl-0 bg-transparent border-b-2 outline-none"
             />
           </div>
           <div class="flex flex-col items-start w-full">
             <label
               for="name"
-              class="text-2xl text-white font-bold font-agrandir"
+              class="text-3xl text-white font-bold font-agrandir"
               >Email</label
             >
             <input
               type="text"
-              class="w-[98%] px-4 pt-5 pl-0 bg-transparent border-b-2 outline-none"
+              value="ciao"
+              class="w-[98%] text-2xl mt-2 pb-2 pt-5 pl-0 bg-transparent border-b-2 outline-none"
             />
           </div>
         </div>
@@ -160,23 +178,25 @@
           <div class="flex flex-col items-start w-full">
             <label
               for="name"
-              class="text-2xl text-white font-bold font-agrandir"
+              class="text-3xl text-white font-bold font-agrandir"
               >Oggetto</label
             >
             <input
               type="text"
-              class="w-[98%] px-4 pt-5 pl-0 bg-transparent border-b-2 outline-none"
+              value="ciao"
+              class="w-[98%] text-2xl mt-2 pb-2 pt-5 pl-0 bg-transparent border-b-2 outline-none"
             />
           </div>
           <div class="flex flex-col items-start w-full">
             <label
               for="name"
-              class="text-2xl text-white font-bold font-agrandir"
+              class="text-3xl text-white font-bold font-agrandir"
               >Allegato</label
             >
             <input
               type="text"
-              class="w-[98%] px-4 pt-5 pl-0 bg-transparent border-b-2 outline-none"
+              value="ciao"
+              class="w-[98%] text-2xl mt-2 pb-2 pt-5 pl-0 bg-transparent border-b-2 outline-none"
             />
           </div>
         </div>
@@ -184,12 +204,12 @@
           <div class="flex flex-col items-start w-full">
             <label
               for="name"
-              class="text-2xl text-white font-bold font-agrandir"
+              class="text-3xl text-white font-bold font-agrandir"
               >Di cosa hai bisogno?</label
             >
             <textarea
               type="text"
-              class="w-full px-4 pt-5 pl-0 bg-transparent border-b-2 outline-none h-52 mb-8"
+              class="w-full text-2xl mt-2 pb-2 pt-5 pl-0 bg-transparent border-b-2 outline-none h-52 mb-8"
             ></textarea>
           </div>
           <app-magnetic-button
