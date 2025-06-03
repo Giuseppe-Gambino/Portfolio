@@ -1,1 +1,87 @@
-<p>portfolio works!</p>
+<section class="h-[100vh] container pt-14">
+  <div class="flex flex-col md:flex-row justify-between mx-8 md:mx-0">
+    <div class="md:w-1/2 me-32">
+      <div class="mb-10">
+        <h1 class="font-agrandirWideBold">Progetti</h1>
+        <h6 class="text-xl font-agrandir tracking-wide mt-4">
+          Questa è lo showcase dei progetti <br />
+          sviluppati durante il mio percorso
+        </h6>
+      </div>
+      <div
+        class="rounded-xl h-full w-full overflow-hidden relative hidden md:block"
+      >
+        <div
+          #preview1
+          class="preview h-full w-full bg-gradient-to-tr from-blue-700 to bg-gray-950 flex justify-center items-center absolute"
+        >
+          <h1 class="italic font-black">STRIDE</h1>
+        </div>
+        <div
+          #preview2
+          class="preview h-full w-full bg-gradient-to-tr from-red-950 to bg-gray-950 flex justify-center items-center absolute"
+        >
+          <h1 class="italic font-black">NETFLIX</h1>
+        </div>
+        <div
+          #preview3
+          class="preview h-full w-full bg-gradient-to-tr from-green-700 to bg-gray-950 flex justify-center items-center absolute"
+        >
+          <h1 class="italic font-black">SPOTIFY</h1>
+        </div>
+        <div
+          #preview0
+          class="preview h-full w-full bg-gradient-to-tr from-gray-700 to bg-gray-950 flex justify-center items-center absolute"
+        ></div>
+      </div>
+    </div>
+    <ul class="flex flex-col gap-6 md:w-1/2 mt-14">
+      <!-- item -->
+      <li
+        (mouseenter)="showPreview(preview1)"
+        (mouseleave)="hidePreview(preview1)"
+        class="flex flex-col border-b pb-6"
+      >
+        <div class="flex project-title">
+          <h1 class="arrow">➧</h1>
+          <h1 class="font-agrandirWide text-7xl tracking-wider">Stride</h1>
+        </div>
+        <h6 class="text-xl">
+          - E-commerce di periferiche da gaming e professionali
+        </h6>
+      </li>
+      <!-- item -->
+      <li
+        (mouseenter)="showPreview(preview2)"
+        (mouseleave)="hidePreview(preview2)"
+        class="flex flex-col border-b pb-4"
+      >
+        <div class="flex project-title">
+          <h1 class="arrow">➧</h1>
+          <h1 class="font-agrandirWide text-7xl tracking-wider">NetFlix</h1>
+        </div>
+        <h6 class="text-xl">- Fake Netflix</h6>
+      </li>
+      <!-- item -->
+      <li
+        (mouseenter)="showPreview(preview3)"
+        (mouseleave)="hidePreview(preview3)"
+        class="flex flex-col border-b pb-4"
+      >
+        <div class="flex project-title">
+          <h1 class="arrow">➧</h1>
+          <h1 class="font-agrandirWide text-7xl tracking-wider">Spotify</h1>
+        </div>
+        <h6 class="text-xl">- Fake Spotify</h6>
+      </li>
+      <!-- item -->
+      <li class="flex flex-col border-b pb-4">
+        <div class="flex project-title">
+          <h1 class="arrow">➧</h1>
+          <h1 class="font-agrandirWide text-7xl tracking-wider">AirBnB</h1>
+        </div>
+        <h6 class="text-xl">- Fake AirBnB</h6>
+      </li>
+    </ul>
+  </div>
+</section>

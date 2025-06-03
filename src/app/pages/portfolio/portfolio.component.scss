@@ -1,0 +1,27 @@
+li {
+  overflow-x: hidden;
+}
+
+.arrow {
+  padding-right: 0.8rem;
+  transform: translateX(-100%) translateZ(0px);
+  transition: 200ms ease-in-out;
+}
+
+.project-title {
+  cursor: pointer;
+  transform: translateX(-2.8rem) translateZ(0px);
+  transition: 200ms ease-in-out;
+}
+
+.project-title:hover {
+  transform: translateX(0rem) translateZ(0px);
+  transition: 200ms ease-in-out;
+  .arrow {
+    transform: translateX(0) translateZ(0px);
+  }
+}
+
+.preview {
+  opacity: 0;
+}

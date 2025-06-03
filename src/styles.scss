@@ -5,19 +5,19 @@
 
 @layer base {
   h1 {
-    @apply text-[55.4px] font-bold;
+    @apply text-[3.4625rem] font-bold;
   }
   h2 {
-    @apply text-[46.7px] font-semibold;
+    @apply text-[2.91875rem] font-semibold;
   }
   h3 {
-    @apply text-[34px] font-semibold;
+    @apply text-[2.125rem] font-semibold;
   }
   h4 {
-    @apply text-[27.7px] font-medium;
+    @apply text-[1.73125rem] font-medium;
   }
   h5 {
-    @apply text-[23.7] font-medium;
+    @apply text-[1.48125rem] font-medium;
   }
   h6 {
     @apply text-base font-medium;
@@ -39,10 +39,24 @@
 }
 
 @font-face {
-  font-family: "Agrandir";
+  font-family: "Agrandir Wide";
   src: url("/assets/fonts/PPAgrandir-WideLight.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Agrandir Wide Bold";
+  src: url("/assets/fonts/agrandir-wide-bold.ttf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Agrandir Wide Black";
+  src: url("/assets/fonts/PPAgrandir-WideBlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
 }
 
 @font-face {
@@ -50,14 +64,6 @@
   src: url("/assets/fonts/PPAgrandir-GrandHeavy.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
-}
-
-/* Variante corsiva (opzionale) */
-@font-face {
-  font-family: "Agrandir";
-  src: url("/assets/fonts/PPAgrandir-WideBlackItalic.otf") format("opentype");
-  font-weight: 900;
-  font-style: italic;
 }
 
 /* Moontime (presumibilmente una sola variante) */

@@ -17,6 +17,10 @@ module.exports = {
       fontFamily: {
         agrandir: ["Agrandir", "sans-serif"],
         moontime: ["Moontime", "cursive"],
+        agrandirWide: ["Agrandir Wide", "sans-serif"],
+        agrandirWideBold: ["Agrandir Wide Bold", "sans-serif"],
+
+        agrandirWideBlack: ["Agrandir Wide Black", "sans-serif"],
       },
     },
   },
