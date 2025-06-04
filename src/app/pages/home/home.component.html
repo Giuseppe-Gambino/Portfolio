@@ -23,7 +23,7 @@
 </section>
 <section
   id="section"
-  class="container h-[65vh] flex justify-end relative mt-36 freeze-section"
+  class="container xl:px-32 h-[65vh] flex justify-end relative mt-36 freeze-section"
 >
   <div
     class="text-about opacity-0 w-4/6 mt-5 ps-10 flex flex-col justify-between h-[70vh]"
@@ -54,29 +54,32 @@
 </section>
 <!-- sezione skills -->
 <section
-  class="container sticky top-0 -z-20 h-[100vh] mt-52 skills flex justify-between pt-32"
+  class="container xl:px-32 sticky top-0 -z-20 h-[100vh] mt-52 skills flex justify-between pt-32"
 >
   <div class="text-skills">
     <h1 class="font-agrandirWideBold">Le mie Skills</h1>
-    <p class="max-w-[25.5rem] text-3xl font-agrandir">
+    <p class="max-w-[24.5rem] text-2xl">
       Nel corso dei miei progetti personali e formativi, ho sviluppato
       competenze solide in sviluppo web frontend, lavorando con tecnologie
-      moderne come Angular, TypeScript e CSS avanzato.
+      moderne come <strong class="text-[#38b6ff]">Angular</strong>,
+      <strong>TypeScript</strong> e <strong>CSS</strong>
+      avanzato.
       <br />
       <br />
-      Utilizzo regolarmente Git per il versionamento e Canva per prototipare
-      interfacce intuitive. Di seguito una panoramica delle principali
-      tecnologie con cui lavoro.
+      Utilizzo regolarmente <strong class="text-[#38b6ff]">Git</strong> per il
+      versionamento e <strong>Canva</strong> per prototipare interfacce
+      intuitive. Di seguito una panoramica delle principali tecnologie con cui
+      lavoro.
     </p>
   </div>
   <div
-    class="h-[70vh] w-[100vh] mt-24 mx-32 grid justify-items-center grid-cols-[repeat(3,1fr)] xl:grid-cols-[repeat(4,1fr)] grid-rows-[repeat(4,1fr)] gap-y-[10px] gap-x-[10px]"
+    class="h-[70vh] mt-24 mx-32 grid justify-items-center grid-cols-[repeat(3,1fr)] xl:grid-cols-[repeat(4,1fr)] grid-rows-[repeat(5,1fr)] gap-10"
   >
     <div
       *ngFor="let item of skills"
-      class="rounded-xl bg-gradient-to-r from-white to-gray-400 border border-white h-[15vh] w-[20vh] flex items-center justify-center"
+      class="rounded-xl bg-gradient-to-r from-white to-gray-400 border border-white h-[12vh] w-[16vh] flex items-center justify-center"
     >
-      <img [src]="item" class="h-16" />
+      <img [src]="item" class="h-14" />
     </div>
   </div>
 </section>
@@ -107,10 +110,10 @@
   </div>
 </div>
 <section class="h-[105vh] bg-[#242424] shadow-2xl">
-  <section class="container pt-44 flex justify-between">
-    <div class="projects-text flex flex-col justify-between">
+  <section class="container xl:px-32 pt-44 flex justify-between">
+    <div class="projects-text flex flex-col justify-between w-1/3">
       <div>
-        <h1 class="font-agrandirWideBold">Ultimi Progetti</h1>
+        <h1 class="font-agrandirWideBold whitespace-nowrap">Ultimi Progetti</h1>
         <p class="max-w-[25.5rem] text-xl font-agrandir opacity-50 mt-12">
           Questi sono alcuni dei progetti più recenti che ho realizzato,
           utilizzando tecnologie moderne e seguendo buone pratiche di sviluppo.
@@ -126,36 +129,36 @@
         buttonColor="#25bbb2"
       ></app-magnetic-button>
     </div>
-    <div class="h-[70vh] w-[120vh] mt-24 mx-32 flex gap-10">
+    <div class="h-[70vh] w-2/3 ms-10 mt-32 flex gap-10">
       <div class="w-[33%] cursor-pointer">
         <div
-          class="h-[80%] bg-gradient-to-tr from-blue-700 to bg-gray-950 rounded-xl"
+          class="h-[60%] bg-gradient-to-tr from-blue-700 to bg-gray-950 rounded-xl"
         ></div>
-        <div class="px-3">
-          <h4>Stride E-commerce</h4>
-          <p class="text-xl">
+        <div class="px-3 mt-3">
+          <h6 class="font-agrandirWideBold">Stride E-commerce</h6>
+          <p class="text-base">
             E-commerce di periferiche da gaming e professionali
           </p>
         </div>
       </div>
       <div class="w-[33%] cursor-pointer">
         <div
-          class="h-[80%] bg-gradient-to-tr from-red-950 to bg-gray-950 rounded-xl"
+          class="h-[60%] bg-gradient-to-tr from-red-950 to bg-gray-950 rounded-xl"
         ></div>
-        <div class="px-3">
-          <h4>Netflix Clone 7h</h4>
-          <p class="text-xl">
+        <div class="px-3 mt-3">
+          <h6 class="font-agrandirWideBold">Netflix Clone 7h</h6>
+          <p class="text-base">
             Riproduzione di Netflix in 7 ore con Angular e bootstrap
           </p>
         </div>
       </div>
       <div class="w-[33%] cursor-pointer">
         <div
-          class="h-[80%] bg-gradient-to-tr from-green-700 to bg-gray-950 rounded-xl"
+          class="h-[60%] bg-gradient-to-tr from-green-700 to bg-gray-950 rounded-xl"
         ></div>
-        <div class="px-3">
-          <h4>Spotify Clone 1Week</h4>
-          <p class="text-xl">
+        <div class="px-3 mt-3">
+          <h6 class="font-agrandirWideBold">Spotify Clone 1Week</h6>
+          <p class="text-base">
             Riproduzione di Spotify in 1 settimana in vanilla JS e CSS in team
           </p>
         </div>
@@ -166,9 +169,9 @@
 <section class="h-[40vh] bg-[#242424]"></section>
 <!-- sezione contattami -->
 <section class="h-[100vh] bg-[#242424] shadow-2xl relative">
-  <section class="container h-full flex pt-[14%]">
+  <section class="container xl:px-32 h-full flex pt-[14%]">
     <h1
-      class="absolute top-0 z-10 text-[20.4rem] font-agrandir font-bold opacity-15 -ms-4 -mt-16 tracking-tighter"
+      class="absolute top-0 z-10 text-[17.4rem] font-agrandir font-bold opacity-15 -ms-4 -mt-16 tracking-tighter"
     >
       Contattami
     </h1>

@@ -59,7 +59,7 @@ export class HomeComponent implements OnInit {
     });
 
     gsap.to('.box-img', {
-      x: -1400,
+      x: -1370,
       scrollTrigger: {
         trigger: '.box-img',
         scrub: true,

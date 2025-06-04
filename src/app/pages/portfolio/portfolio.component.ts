@@ -14,9 +14,15 @@ export class PortfolioComponent implements OnInit, OnDestroy {
     private lenis: LenisService
   ) {}
 
+  ngAfterViewInit(): void {
+    window.scrollTo(0, 0);
+  }
+
   ngOnInit(): void {
-    this.navAn.show();
     this.lenis.stop();
+    setTimeout(() => {
+      this.navAn.show();
+    }, 500);
   }
 
   ngOnDestroy(): void {
