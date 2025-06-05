@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, effect, inject, OnInit } from '@angular/core';
 import { gsap } from 'gsap';
 import { NavAnimationService } from './nav-animation.service';
 
@@ -7,25 +7,21 @@ import { NavAnimationService } from './nav-animation.service';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
-export class NavbarComponent implements OnInit {
-  constructor(public navAn: NavAnimationService) {}
+export class NavbarComponent {
+  private navAn = inject(NavAnimationService);
 
-  ngAfterViewInit(): void {
-    gsap.set('.nav-bar', { y: -200 });
-  }
-
-  ngOnInit(): void {
-    this.navAn.isNavOpen$.subscribe((isOpen) => {
-      if (isOpen) {
+  constructor() {
+    effect(() => {
+      if (this.navAn.isNavOpen()) {
         gsap.to('.nav-bar', {
           y: 0,
-          animation: 'ease-in-out',
+          ease: 'power2.out',
           duration: 0.5,
         });
       } else {
         gsap.to('.nav-bar', {
           y: -200,
-          animation: 'ease-in-out',
+          ease: 'power2.out',
           duration: 0.5,
         });
       }

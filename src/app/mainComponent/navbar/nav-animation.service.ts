@@ -1,20 +1,22 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class NavAnimationService {
-  private _isNavOpen: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(
-    false
-  );
-  public isNavOpen$ = this._isNavOpen.asObservable();
+  private _isNavOpen = signal(false);
+  public readonly isNavOpen = this._isNavOpen;
 
   show() {
-    this._isNavOpen.next(true);
+    this._isNavOpen.set(true);
   }
 
   hide() {
-    this._isNavOpen.next(false);
+    this._isNavOpen.set(false);
+  }
+
+  toggle() {
+    this._isNavOpen.update((value) => !value);
   }
 }
