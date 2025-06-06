@@ -1,0 +1,263 @@
+<section class="container h-[90vh] flex items-center justify-end relative">
+  <div class="hero-text min-w-fit max-h-fit absolute start-0 z-10">
+    <h1 class="text-[100px] font-moontime font-light m--30">Full stack.</h1>
+    <h1 class="font-agrandirWideBold leading-[6.5rem] text-[5.3rem]">
+      Designer mancato, <br />
+      Dev convinto.
+      <span class="font-moontime font-light whitespace-nowrap">
+        Full style.</span
+      >
+    </h1>
+    <h1 class="text-[100px] font-moontime font-light m--30">
+      Giuseppe Gambino
+    </h1>
+  </div>
+  <div class="flex box-img me-[-20rem]">
+    <div
+      class="avatar bg-cover box rounded-3xl bg-slate-600 h-[45rem] w-[33.5rem]"
+    ></div>
+    <div
+      class="setup bg-cover bg-center box rounded-3xl bg-slate-600 h-[45rem] w-[33.5rem] mx-8"
+    ></div>
+  </div>
+</section>
+<section
+  id="section"
+  class="container xl:px-32 h-[65vh] flex justify-end relative mt-36 freeze-section"
+>
+  <div
+    class="text-about opacity-0 w-4/6 mt-5 ps-10 flex flex-col justify-between h-[70vh]"
+  >
+    <div>
+      <h1 class="font-agrandirWideBold">About me</h1>
+      <h3 class="font-semibold mb-2 -mt-1">Full Stack Developer</h3>
+      <p class="text-3xl max-w-[45rem]">
+        Ciao!👋 Sono Giuseppe Gambino, ho 22 anni e sono un Junior Full Stack
+        Developer. Appassionato di tecnologia, design e sviluppo web, amo
+        trasformare idee in interfacce dinamiche e funzionali.
+        <br /><br />
+        Cerco sempre di crescere, imparare e costruire esperienze digitali
+        curate e moderne.
+      </p>
+    </div>
+    <div class="flex justify-between">
+      <h1 class="text-[80px] font-moontime font-light m--30">Essential</h1>
+
+      <!-- button -->
+      <app-magnetic-button
+        class="me-24"
+        circleText="SCOPRI DI PIU ••• SCOPRI DI PIU ••• "
+        buttonText="SCOPRI DI PIU"
+      ></app-magnetic-button>
+    </div>
+  </div>
+</section>
+<!-- sezione skills -->
+<section
+  class="container xl:px-32 sticky top-0 -z-20 h-[100vh] mt-52 skills flex justify-between pt-32"
+>
+  <div class="text-skills">
+    <h1 class="font-agrandirWideBold">Le mie Skills</h1>
+    <p class="max-w-[24.5rem] text-2xl">
+      Nel corso dei miei progetti personali e formativi, ho sviluppato
+      competenze solide in sviluppo web frontend, lavorando con tecnologie
+      moderne come <strong class="text-[#38b6ff]">Angular</strong>,
+      <strong>TypeScript</strong> e <strong>CSS</strong>
+      avanzato.
+      <br />
+      <br />
+      Utilizzo regolarmente <strong class="text-[#38b6ff]">Git</strong> per il
+      versionamento e <strong>Canva</strong> per prototipare interfacce
+      intuitive. Di seguito una panoramica delle principali tecnologie con cui
+      lavoro.
+    </p>
+  </div>
+  <div
+    class="h-[70vh] mt-24 mx-32 grid justify-items-center grid-cols-[repeat(3,1fr)] xl:grid-cols-[repeat(4,1fr)] grid-rows-[repeat(5,1fr)] gap-10"
+  >
+    <div
+      *ngFor="let item of skills"
+      class="rounded-xl icon h-[12vh] w-[16vh] flex items-center justify-center"
+    >
+      <img [src]="item" class="h-14" />
+    </div>
+  </div>
+</section>
+<!-- sezione progetti -->
+<div class="bg-orange-500 mt-20 h-20 gap-3 overflow-hidden -rotate-1 -mb-5">
+  <div class="flex items-center justify-center mt-4">
+    <p class="infinity-text text-5xl font-agrandir whitespace-nowrap me-10">
+      Web Design #
+    </p>
+    <p class="infinity-text text-5xl font-agrandir whitespace-nowrap me-10">
+      Web Design #
+    </p>
+    <p class="infinity-text text-5xl font-agrandir whitespace-nowrap me-10">
+      Web Design #
+    </p>
+    <p class="infinity-text text-5xl font-agrandir whitespace-nowrap me-10">
+      Web Design #
+    </p>
+    <p class="infinity-text text-5xl font-agrandir whitespace-nowrap me-10">
+      Web Design #
+    </p>
+    <p class="infinity-text text-5xl font-agrandir whitespace-nowrap me-10">
+      Web Design #
+    </p>
+    <p class="infinity-text text-5xl font-agrandir whitespace-nowrap me-10">
+      Web Design #
+    </p>
+  </div>
+</div>
+<section class="h-[125vh] bg-[#242424] shadow-2xl">
+  <section class="container xl:px-32 pt-44 flex justify-between">
+    <div class="projects-text flex flex-col justify-between w-1/3">
+      <div>
+        <h1 class="font-agrandirWideBold whitespace-nowrap">Ultimi Progetti</h1>
+        <p class="max-w-[25.5rem] text-xl font-agrandir opacity-50 mt-12">
+          Questi sono alcuni dei progetti più recenti che ho realizzato,
+          utilizzando tecnologie moderne e seguendo buone pratiche di sviluppo.
+          <br />
+          <br />
+          Ogni progetto rappresenta un’occasione in cui ho messo in pratica le
+          mie competenze in frontend e/o backend."
+        </p>
+      </div>
+      <app-magnetic-button
+        circleText="VEDI ALTRO ••• VEDI ALTRO ••• VEDI ALTRO ••• "
+        buttonText="VEDI ALTRO"
+        buttonColor="#25bbb2"
+      ></app-magnetic-button>
+    </div>
+    <div class="h-[70vh] w-2/3 ms-10 mt-32 flex gap-10">
+      <div class="w-[33%] cursor-pointer">
+        <div
+          class="h-[60%] bg-gradient-to-tr from-blue-700 to bg-gray-950 rounded-xl"
+        ></div>
+        <div class="px-3 mt-3">
+          <h6 class="font-agrandirWideBold">Stride E-commerce</h6>
+          <p class="text-base">
+            E-commerce di periferiche da gaming e professionali
+          </p>
+        </div>
+      </div>
+      <div class="w-[33%] cursor-pointer">
+        <div
+          class="h-[60%] bg-gradient-to-tr from-red-950 to bg-gray-950 rounded-xl"
+        ></div>
+        <div class="px-3 mt-3">
+          <h6 class="font-agrandirWideBold">Netflix Clone 7h</h6>
+          <p class="text-base">
+            Riproduzione di Netflix in 7 ore con Angular e bootstrap
+          </p>
+        </div>
+      </div>
+      <div class="w-[33%] cursor-pointer">
+        <div
+          class="h-[60%] bg-gradient-to-tr from-green-700 to bg-gray-950 rounded-xl"
+        ></div>
+        <div class="px-3 mt-3">
+          <h6 class="font-agrandirWideBold">Spotify Clone 1Week</h6>
+          <p class="text-base">
+            Riproduzione di Spotify in 1 settimana in vanilla JS e CSS in team
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<!-- sezione contattami -->
+<section class="h-[100vh] bg-[#242424] shadow-2xl relative">
+  <section class="container xl:px-32 h-full flex pt-[13%]">
+    <h1
+      class="absolute top-0 z-10 text-[17.4rem] font-agrandir font-bold opacity-15 -ms-4 -mt-16 tracking-tighter"
+    >
+      Contattami
+    </h1>
+    <!-- text + contatti -->
+    <div class="w-1/3 flex flex-col justify-between pb-16">
+      <p class="max-w-[25.5rem] text-2xl font-agrandir opacity-50 mt-20">
+        "Hai un progetto in mente o vuoi collaborare? Scrivimi!"
+        <br /><br />
+        "Sarò felice di ascoltare la tua idea o rispondere a qualsiasi domanda!
+      </p>
+      <app-link></app-link>
+    </div>
+    <!-- form di contatto -->
+    <div class="z-20 w-2/3">
+      <form class="flex flex-col gap-12">
+        <div class="flex justify-between gap-7">
+          <div class="flex flex-col items-start w-full">
+            <label
+              for="name"
+              class="text-3xl text-white font-bold font-agrandir"
+              >Nome</label
+            >
+            <input
+              type="text"
+              value="ciao"
+              class="w-[98%] text-2xl mt-2 pb-2 pt-5 pl-0 bg-transparent border-b-2 outline-none"
+            />
+          </div>
+          <div class="flex flex-col items-start w-full">
+            <label
+              for="name"
+              class="text-3xl text-white font-bold font-agrandir"
+              >Email</label
+            >
+            <input
+              type="text"
+              value="ciao"
+              class="w-[98%] text-2xl mt-2 pb-2 pt-5 pl-0 bg-transparent border-b-2 outline-none"
+            />
+          </div>
+        </div>
+        <div class="flex justify-between gap-7">
+          <div class="flex flex-col items-start w-full">
+            <label
+              for="name"
+              class="text-3xl text-white font-bold font-agrandir"
+              >Oggetto</label
+            >
+            <input
+              type="text"
+              value="ciao"
+              class="w-[98%] text-2xl mt-2 pb-2 pt-5 pl-0 bg-transparent border-b-2 outline-none"
+            />
+          </div>
+          <div class="flex flex-col items-start w-full">
+            <label
+              for="name"
+              class="text-3xl text-white font-bold font-agrandir"
+              >Allegato</label
+            >
+            <input
+              type="text"
+              value="ciao"
+              class="w-[98%] text-2xl mt-2 pb-2 pt-5 pl-0 bg-transparent border-b-2 outline-none"
+            />
+          </div>
+        </div>
+        <div class="flex items-start gap-4 mt-6">
+          <div class="flex flex-col items-start w-full">
+            <label
+              for="name"
+              class="text-3xl text-white font-bold font-agrandir"
+              >Di cosa hai bisogno?</label
+            >
+            <textarea
+              type="text"
+              class="w-full text-2xl mt-2 pb-2 pt-5 pl-0 bg-transparent border-b-2 outline-none h-52 mb-8"
+            ></textarea>
+          </div>
+          <app-magnetic-button
+            class="ms-10 self-end"
+            buttonColor="#25bbb2"
+            circleText="SEND    •••    SEND    •••    SEND    •••    "
+            buttonText="INVIA"
+          ></app-magnetic-button>
+        </div>
+      </form>
+    </div>
+  </section>
+</section>
