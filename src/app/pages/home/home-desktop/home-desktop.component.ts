@@ -107,7 +107,7 @@ export class HomeDesktopComponent implements OnInit, OnDestroy {
       scrollTrigger: {
         trigger: '.projects-text',
         start: 'top 100rem',
-        // onEnter: () => this.stopOneSec(),
+        onEnter: () => this.stopOneSec(),
       },
     });
 

@@ -14,6 +14,17 @@ li {
   transition: 200ms ease-in-out;
 }
 
+@media screen and (max-width: 768px) {
+  .project-title {
+    cursor: pointer;
+    transform: translateX(0) translateZ(0px);
+    transition: 200ms ease-in-out;
+    .arrow {
+      display: none;
+    }
+  }
+}
+
 .project-title:hover {
   transform: translateX(0rem) translateZ(0px);
   transition: 200ms ease-in-out;
