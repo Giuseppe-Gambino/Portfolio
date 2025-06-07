@@ -1,4 +1,6 @@
-<div class="z-50 fixed nav-bar top-6 mt-6 xl:px-32 invisible md:visible">
+<div
+  class="z-50 fixed nav-bar opacity-0 top-6 mt-6 xl:px-32 invisible md:visible"
+>
   <div class="opacity-30 py-2 px-4 bg-white rounded-md max-w-fit max-h-fit">
     <ul class="flex gap-5 text-black font-semibold">
       <li routerLink="" class="cursor-pointer">Home</li>
@@ -11,6 +13,7 @@
 <div class="visible md:hidden fixed bottom-8 right-6 text-right w-fit z-50">
   <div class="relative">
     <h3
+      (click)="click()"
       routerLink="/about"
       *ngIf="isOpen"
       class="absolute -top-20 right-10 whitespace-nowrap"
@@ -18,13 +21,19 @@
       About me
     </h3>
     <h3
+      (click)="click()"
       routerLink="/portfolio"
       *ngIf="isOpen"
       class="absolute -top-10 right-14"
     >
       Progetti
     </h3>
-    <h3 routerLink="/contact" *ngIf="isOpen" class="absolute right-16">
+    <h3
+      (click)="click()"
+      routerLink="/contact"
+      *ngIf="isOpen"
+      class="absolute right-16"
+    >
       Contattami
     </h3>
     <button (click)="click()" class="bg-gray-800 rounded-full p-5">M</button>

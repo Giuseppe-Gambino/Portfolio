@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { NavAnimationService } from '../../../mainComponent/navbar/nav-animation.service';
@@ -12,11 +12,15 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
   templateUrl: './home-desktop.component.html',
   styleUrl: './home-desktop.component.scss',
 })
-export class HomeDesktopComponent implements OnInit {
+export class HomeDesktopComponent implements OnInit, OnDestroy {
   constructor(
     private navAn: NavAnimationService,
     private lenis: LenisService
   ) {}
+  ngOnDestroy(): void {
+    // 🔥 Kill ALL scroll triggers creati da GSAP
+    ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+  }
 
   skills: string[] = [
     'angular.png',

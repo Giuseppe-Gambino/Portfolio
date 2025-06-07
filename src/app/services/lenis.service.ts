@@ -1,10 +1,12 @@
 import { Injectable } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 import Lenis from '@studio-freight/lenis';
+import { filter } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
 export class LenisService {
-  constructor() {}
+  constructor(private router: Router) {}
 
   private lenis!: Lenis;
 
@@ -17,6 +19,12 @@ export class LenisService {
         requestAnimationFrame(raf);
       };
       requestAnimationFrame(raf);
+
+      this.router.events
+        .pipe(filter((e) => e instanceof NavigationEnd))
+        .subscribe(() => {
+          this.lenis.scrollTo(0, { immediate: true }); // scrolla in alto
+        });
     }
   }
 

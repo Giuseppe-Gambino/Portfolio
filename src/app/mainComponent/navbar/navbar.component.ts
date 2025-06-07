@@ -19,6 +19,7 @@ export class NavbarComponent {
         gsap.to('.nav-bar', {
           y: 0,
           ease: 'power2.out',
+          opacity: 1,
           duration: 0.5,
         });
       } else {
