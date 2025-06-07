@@ -4,6 +4,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 import { NavAnimationService } from '../../../mainComponent/navbar/nav-animation.service';
 import ScrollSmoother from 'gsap/ScrollSmoother';
 import { LenisService } from '../../../services/lenis.service';
+import { ViewportScroller } from '@angular/common';
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 @Component({
@@ -102,7 +103,7 @@ export class HomeDesktopComponent implements OnInit {
       scrollTrigger: {
         trigger: '.projects-text',
         start: 'top 100rem',
-        onEnter: () => this.stopOneSec(),
+        // onEnter: () => this.stopOneSec(),
       },
     });
 

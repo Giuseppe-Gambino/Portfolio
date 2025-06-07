@@ -1,6 +1,7 @@
 import { Component, effect, inject, OnInit } from '@angular/core';
 import { gsap } from 'gsap';
 import { NavAnimationService } from './nav-animation.service';
+import { LenisService } from '../../services/lenis.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,7 +11,9 @@ import { NavAnimationService } from './nav-animation.service';
 export class NavbarComponent {
   private navAn = inject(NavAnimationService);
 
-  constructor() {
+  isOpen: boolean = false;
+
+  constructor(private lenis: LenisService) {
     effect(() => {
       if (this.navAn.isNavOpen()) {
         gsap.to('.nav-bar', {
@@ -26,5 +29,13 @@ export class NavbarComponent {
         });
       }
     });
+  }
+
+  scrollDown() {
+    this.lenis.scrollTo('.cot');
+  }
+
+  click() {
+    this.isOpen = !this.isOpen;
   }
 }
