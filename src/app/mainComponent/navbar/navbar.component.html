@@ -14,6 +14,7 @@
 <div class="visible md:hidden fixed bottom-8 right-6 text-right w-fit z-50">
   <div class="nav-container">
     <h3
+      #navItem
       (click)="click()"
       routerLink=""
       *ngIf="isOpen"
@@ -22,6 +23,7 @@
       Home
     </h3>
     <h3
+      #navItem
       (click)="click()"
       routerLink="/about"
       *ngIf="isOpen"
@@ -30,6 +32,7 @@
       About me
     </h3>
     <h3
+      #navItem
       (click)="click()"
       routerLink="/portfolio"
       *ngIf="isOpen"
@@ -38,6 +41,7 @@
       Progetti
     </h3>
     <h3
+      #navItem
       (click)="click()"
       routerLink="/contact"
       *ngIf="isOpen"
@@ -46,9 +50,9 @@
       Contattami
     </h3>
     <button
-      [class.menu]="isOpen"
+      [ngClass]="{ menu: isOpen, 'menu-closed': !isOpen }"
       (click)="click()"
-      class="bg-gray-800 rounded-full p-5 font-moontime text-5xl"
+      class="bg-gray-800 bb rounded-full p-5 font-moontime text-5xl"
     >
       <span *ngIf="isOpen">G</span
       ><svg

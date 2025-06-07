@@ -9,6 +9,6 @@ import { NavAnimationService } from '../../../mainComponent/navbar/nav-animation
 export class HomeMobileComponent implements OnInit {
   constructor(private navAn: NavAnimationService) {}
   ngOnInit(): void {
-    // this.navAn.show();
+    this.navAn.showMob();
   }
 }

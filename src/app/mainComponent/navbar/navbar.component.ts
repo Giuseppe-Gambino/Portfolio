@@ -1,4 +1,12 @@
-import { Component, effect, inject, OnInit } from '@angular/core';
+import {
+  Component,
+  effect,
+  ElementRef,
+  inject,
+  OnInit,
+  QueryList,
+  ViewChildren,
+} from '@angular/core';
 import { gsap } from 'gsap';
 import { NavAnimationService } from './nav-animation.service';
 import { LenisService } from '../../services/lenis.service';
@@ -11,7 +19,7 @@ import { LenisService } from '../../services/lenis.service';
 export class NavbarComponent implements OnInit {
   private navAn = inject(NavAnimationService);
 
-  isOpen: boolean = true;
+  isOpen: boolean = false;
 
   constructor(private lenis: LenisService) {
     effect(() => {
@@ -30,21 +38,42 @@ export class NavbarComponent implements OnInit {
         });
       }
     });
+    effect(() => {
+      this.isOpen = this.navAn.isNavMobileOpen();
+    });
   }
+
   ngOnInit(): void {
-    //   gsap.from('.nav-item', {
-    //     x: 100,
-    //     top: 0,
-    //     bottom: 0,
-    //     duration: 500,
-    //   });
+    gsap.to('.contact', {
+      y: -200,
+      duration: 1.5,
+    });
   }
 
   scrollDown() {
     this.lenis.scrollTo('.cot');
   }
 
+  @ViewChildren('navItem', { read: ElementRef })
+  navItems!: QueryList<ElementRef>;
+
   click() {
-    this.isOpen = !this.isOpen;
+    this.navAn.toggleMob();
+
+    if (this.navAn.isNavMobileOpen()) {
+      setTimeout(() => {
+        gsap.from(
+          this.navItems.map((el) => el.nativeElement),
+          {
+            top: 0,
+            right: 0,
+            opacity: 0,
+            stagger: 0.1,
+            duration: 0.8,
+            ease: 'power4.out',
+          }
+        );
+      }, 0);
+    }
   }
 }

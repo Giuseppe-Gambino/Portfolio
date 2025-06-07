@@ -19,4 +19,19 @@ export class NavAnimationService {
   toggle() {
     this._isNavOpen.update((value) => !value);
   }
+
+  private _isNavMobileOpen = signal(false);
+  public readonly isNavMobileOpen = this._isNavMobileOpen;
+
+  showMob() {
+    this._isNavMobileOpen.set(true);
+  }
+
+  hideMob() {
+    this._isNavMobileOpen.set(false);
+  }
+
+  toggleMob() {
+    this._isNavMobileOpen.update((value) => !value);
+  }
 }

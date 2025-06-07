@@ -38,4 +38,11 @@ li {
 .menu {
   box-shadow: -80px -20px 90px 100px #004e6a, 20px 9px 100px 100px #00ffe5,
     -200px 60px 100px 100px #004e6a;
+  transition: 250ms;
+}
+
+.meno-closed {
+  box-shadow: -80px -20px 90px 100px #004e6a00, 20px 9px 100px 100px #00ffe500,
+    -200px 60px 100px 100px #004e6a00;
+  transition: 500ms;
 }
