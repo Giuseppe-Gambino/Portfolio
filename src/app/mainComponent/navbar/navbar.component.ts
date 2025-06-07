@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import {
   Component,
   effect,
@@ -21,7 +22,7 @@ export class NavbarComponent implements OnInit {
 
   isOpen: boolean = false;
 
-  constructor(private lenis: LenisService) {
+  constructor(private lenis: LenisService, private Router: Router) {
     effect(() => {
       if (this.navAn.isNavOpen()) {
         gsap.to('.nav-bar', {
@@ -51,7 +52,13 @@ export class NavbarComponent implements OnInit {
   }
 
   scrollDown() {
-    this.lenis.scrollTo('.cot');
+    this.Router.navigate(['']);
+    setTimeout(() => {
+      window.scrollTo({
+        top: 4000,
+        behavior: 'smooth',
+      });
+    }, 100);
   }
 
   @ViewChildren('navItem', { read: ElementRef })

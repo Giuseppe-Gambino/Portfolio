@@ -14,21 +14,25 @@
   <div class="sec2 opacity-0 flex flex-col md:flex-row justify-between">
     <div class="w-full md:w-1/2 flex flex-col">
       <div
-        class="grid grid-cols-[repeat(2,1fr)] md:grid-cols-[repeat(3,1fr)] grid-rows-[repeat(2,1fr)] gap-y-[10px] gap-x-[10px]"
+        class="grid grid-cols-[repeat(2,1fr)] md:grid-cols-[repeat(3,1fr)] grid-rows-[repeat(2,1fr)] gap-y-[2rem] gap-x-[10px]"
       >
         <div class="row-1 row-2 col-1 col-2">
-          <h4 class="font-bold text-[#7fd5de]">CATEGORIE</h4>
+          <h4 class="font-bold text-xl md:text-[1.6rem] text-[#7fd5de]">
+            CATEGORIE
+          </h4>
         </div>
         <div class="row-start-1 row-end-1 col-start-2 col-end-4">
-          <ul class="decoration-none list-none mt-4 text-xl">
+          <ul class="decoration-none list-none text-xl">
             <li *ngFor="let cat of project.categories">{{ cat }}</li>
           </ul>
         </div>
         <div class="row-2 row-3 col-1 col-2">
-          <h4 class="font-bold text-[#7fd5de]">ANNO</h4>
+          <h4 class="font-bold text-xl md:text-[1.6rem] text-[#7fd5de]">
+            ANNO
+          </h4>
         </div>
         <div class="row-start-2 row-end-3 col-start-2 col-end-4">
-          <p class="decoration-none list-none mt-4 text-xl">
+          <p class="decoration-none list-none text-xl">
             {{ project.year }}
           </p>
         </div>
@@ -51,10 +55,12 @@
         class="grid grid-cols-[repeat(2,1fr)] md:grid-cols-[repeat(3,1fr)] grid-rows-[repeat(1,1fr)] gap-y-[10px] gap-x-[10px] md:w-1/2"
       >
         <div class="row-1 row-2 col-1 col-2">
-          <h4 class="font-bold text-[#7fd5de]">TECH</h4>
+          <h4 class="font-bold text-xl md:text-[1.6rem] text-[#7fd5de]">
+            TECH
+          </h4>
         </div>
         <div class="row-start-1 row-end-1 col-start-2 col-end-4">
-          <ul class="decoration-none list-none mt-4 text-xl">
+          <ul class="decoration-none list-none text-xl">
             <li *ngFor="let tech of project.technologies">{{ tech }}</li>
           </ul>
         </div>
@@ -63,12 +69,30 @@
         class="grid grid-cols-[repeat(2,1fr)] md:grid-cols-[repeat(3,1fr)] grid-rows-[repeat(1,1fr)] gap-y-[10px] gap-x-[10px] md:w-1/2"
       >
         <div class="row-1 row-2 col-1 col-2">
-          <h4 class="font-bold text-[#7fd5de] md:text-center">LINK</h4>
+          <h4
+            class="font-bold text-xl md:text-[1.6rem] text-[#7fd5de] md:text-center"
+          >
+            LINK
+          </h4>
         </div>
         <div class="row-start-1 row-end-1 col-start-2 col-end-4">
-          <ul class="decoration-none list-none mt-4 text-xl">
-            <li><a [href]="project.link">WebSite</a></li>
-            <li><a [href]="project.github">Git Hub</a></li>
+          <ul class="decoration-none list-none text-xl">
+            <li>
+              <a
+                class="underline underline-offset-2"
+                target="_blank"
+                [href]="project.link"
+                >WebSite</a
+              >
+            </li>
+            <li>
+              <a
+                class="underline underline-offset-2"
+                target="_blank"
+                [href]="project.github"
+                >Git Hub</a
+              >
+            </li>
           </ul>
         </div>
       </div>

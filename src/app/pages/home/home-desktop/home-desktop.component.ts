@@ -18,7 +18,6 @@ export class HomeDesktopComponent implements OnInit, OnDestroy {
     private lenis: LenisService
   ) {}
   ngOnDestroy(): void {
-    // 🔥 Kill ALL scroll triggers creati da GSAP
     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
   }
 
