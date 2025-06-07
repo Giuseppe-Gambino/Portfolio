@@ -11,8 +11,4 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent implements OnInit {
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
-}
+export class HomeComponent {}
