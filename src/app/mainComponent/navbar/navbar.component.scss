@@ -2,5 +2,40 @@ li {
   max-height: min-content;
 }
 
-.nav-bar {
+.nav-container {
+  position: relative;
+  transition: 250ms;
+
+  .nav-item {
+    &.home {
+      top: -8rem;
+      right: 1.25rem;
+    }
+
+    &.about {
+      bottom: 7rem;
+      right: 2.5rem;
+    }
+
+    &.projects {
+      bottom: 3.5rem;
+      right: 6rem;
+    }
+
+    &.contact {
+      bottom: 0;
+      right: 7rem;
+    }
+
+    &.active {
+      opacity: 1;
+      transform: translateY(-10px);
+      pointer-events: auto;
+    }
+  }
+}
+
+.menu {
+  box-shadow: -80px -20px 90px 100px #004e6a, 20px 9px 100px 100px #00ffe5,
+    -200px 60px 100px 100px #004e6a;
 }

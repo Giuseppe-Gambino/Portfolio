@@ -10,13 +10,22 @@
     </ul>
   </div>
 </div>
+<!-- nav mobile -->
 <div class="visible md:hidden fixed bottom-8 right-6 text-right w-fit z-50">
-  <div class="relative">
+  <div class="nav-container">
+    <h3
+      (click)="click()"
+      routerLink=""
+      *ngIf="isOpen"
+      class="nav-item home absolute font-agrandirWideBold whitespace-nowrap"
+    >
+      Home
+    </h3>
     <h3
       (click)="click()"
       routerLink="/about"
       *ngIf="isOpen"
-      class="absolute -top-20 right-10 whitespace-nowrap"
+      class="nav-item about absolute font-agrandirWideBold whitespace-nowrap"
     >
       About me
     </h3>
@@ -24,7 +33,7 @@
       (click)="click()"
       routerLink="/portfolio"
       *ngIf="isOpen"
-      class="absolute -top-10 right-14"
+      class="nav-item projects absolute font-agrandirWideBold 4"
     >
       Progetti
     </h3>
@@ -32,10 +41,48 @@
       (click)="click()"
       routerLink="/contact"
       *ngIf="isOpen"
-      class="absolute right-16"
+      class="nav-item contact absolute font-agrandirWideBold"
     >
       Contattami
     </h3>
-    <button (click)="click()" class="bg-gray-800 rounded-full p-5">M</button>
+    <button
+      [class.menu]="isOpen"
+      (click)="click()"
+      class="bg-gray-800 rounded-full p-5 font-moontime text-5xl"
+    >
+      <span *ngIf="isOpen">G</span
+      ><svg
+        *ngIf="!isOpen"
+        xmlns="http://www.w3.org/2000/svg"
+        x="0px"
+        y="0px"
+        width="28"
+        height="48"
+        viewBox="0,0,256,256"
+      >
+        <g
+          fill="#ffffff"
+          fill-rule="nonzero"
+          stroke="none"
+          stroke-width="1"
+          stroke-linecap="butt"
+          stroke-linejoin="miter"
+          stroke-miterlimit="10"
+          stroke-dasharray=""
+          stroke-dashoffset="0"
+          font-family="none"
+          font-weight="none"
+          font-size="none"
+          text-anchor="none"
+          style="mix-blend-mode: normal"
+        >
+          <g transform="scale(5.12,5.12)">
+            <path
+              d="M5,8c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,23c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,38c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175z"
+            ></path>
+          </g>
+        </g>
+      </svg>
+    </button>
   </div>
 </div>

@@ -8,10 +8,10 @@ import { LenisService } from '../../services/lenis.service';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
   private navAn = inject(NavAnimationService);
 
-  isOpen: boolean = false;
+  isOpen: boolean = true;
 
   constructor(private lenis: LenisService) {
     effect(() => {
@@ -30,6 +30,14 @@ export class NavbarComponent {
         });
       }
     });
+  }
+  ngOnInit(): void {
+    //   gsap.from('.nav-item', {
+    //     x: 100,
+    //     top: 0,
+    //     bottom: 0,
+    //     duration: 500,
+    //   });
   }
 
   scrollDown() {
