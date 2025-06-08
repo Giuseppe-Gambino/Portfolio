@@ -37,7 +37,7 @@ export const PROJECTS: Project[] = [
     name: 'NgeFlix',
     color: '#450a0a',
     categories: ['Front-End', 'Statico', 'Responsive Layout'],
-    year: 2025,
+    year: 2024,
     description: `In una giornata di sviluppo intensivo, ho realizzato una web app di film in stile Netflix, utilizzando il framework Angular per la struttura e Bootstrap per lo stile. Il progetto è completamente responsive, ottimizzato per dispositivi mobili, tablet e desktop. L’obiettivo era simulare un’interfaccia moderna e dinamica per una piattaforma di streaming.`,
     image: 'ngeflix.png',
     link: '',

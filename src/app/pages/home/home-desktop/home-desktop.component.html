@@ -210,7 +210,7 @@
     </div>
     <!-- form di contatto -->
     <div class="z-20 w-2/3 cot">
-      <form class="flex flex-col gap-12">
+      <form (submit)="sendEmail($event)" class="flex flex-col gap-12">
         <div class="flex justify-between gap-7">
           <div class="flex flex-col items-start w-full">
             <label
@@ -219,6 +219,7 @@
               >Nome</label
             >
             <input
+              name="name"
               type="text"
               class="w-[98%] text-2xl mt-2 pb-2 pt-5 pl-0 bg-transparent border-b-2 outline-none"
             />
@@ -230,6 +231,7 @@
               >Email</label
             >
             <input
+              name="email"
               type="text"
               class="w-[98%] text-2xl mt-2 pb-2 pt-5 pl-0 bg-transparent border-b-2 outline-none"
             />
@@ -239,25 +241,17 @@
           <div class="flex flex-col items-start w-full">
             <label
               for="name"
+              name="title"
               class="text-3xl text-white font-bold font-agrandir"
               >Oggetto</label
             >
             <input
               type="text"
+              name="message"
               class="w-[98%] text-2xl mt-2 pb-2 pt-5 pl-0 bg-transparent border-b-2 outline-none"
             />
           </div>
-          <div class="flex flex-col items-start w-full">
-            <label
-              for="name"
-              class="text-3xl text-white font-bold font-agrandir"
-              >Allegato</label
-            >
-            <input
-              type="text"
-              class="w-[98%] text-2xl mt-2 pb-2 pt-5 pl-0 bg-transparent border-b-2 outline-none"
-            />
-          </div>
+          <div class="flex flex-col items-start w-full"></div>
         </div>
         <div class="flex items-start gap-4 mt-6">
           <div class="flex flex-col items-start w-full">

@@ -3,7 +3,9 @@
     [ngStyle]="gradientStyle"
     class="banner shadow-md w-full mb-10 h-[20vh] md:h-[50vh] -mt-16 rounded-b-3xl flex justify-center items-center"
   >
-    <h1 class="italic font-black mt-12 md:mt-0">{{ project.name }}</h1>
+    <h1 class="italic font-black mt-12 md:mt-0">
+      {{ project.name | uppercase }}
+    </h1>
   </div>
   <!-- titolo -->
   <div class="sec1 opacity-0 border-b-2 border-white pb-2 mb-4">

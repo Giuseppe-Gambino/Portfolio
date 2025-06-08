@@ -5,6 +5,8 @@ import { NavAnimationService } from '../../../mainComponent/navbar/nav-animation
 import ScrollSmoother from 'gsap/ScrollSmoother';
 import { LenisService } from '../../../services/lenis.service';
 import { Project, PROJECTS } from '../../../data/projects';
+import emailjs from 'emailjs-com';
+import { environment } from '../../../../environments/environment';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -134,5 +136,29 @@ export class HomeDesktopComponent implements OnInit, OnDestroy {
         end: 'top top',
       },
     });
+  }
+
+  sendEmail(event: Event) {
+    event.preventDefault();
+
+    const target = event.target as HTMLFormElement;
+
+    emailjs
+      .sendForm(
+        environment.emailServiceID,
+        environment.emailTemplateID,
+        target,
+        environment.emailPublicKey
+      )
+      .then(
+        () => {
+          alert('Email inviata con successo!');
+          target.reset();
+        },
+        (error) => {
+          console.error('Errore invio:', error);
+          alert("Errore durante l'invio dell'email.");
+        }
+      );
   }
 }
