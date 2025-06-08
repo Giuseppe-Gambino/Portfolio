@@ -38,8 +38,6 @@ testem.log
 /typings
 
 
-# Ignora  l'env
-/src/environments/environment.prod.ts
 
 
 
