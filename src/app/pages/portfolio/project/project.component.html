@@ -1,6 +1,7 @@
 <section *ngIf="project" class="container h-[200vh] xl:px-32">
   <div
-    class="banner shadow-md w-full mb-10 h-[20vh] md:h-[50vh] -mt-16 bg-gradient-to-tr from-[#1a1a31] to bg-gray-950 rounded-b-3xl flex justify-center items-center"
+    [ngStyle]="gradientStyle"
+    class="banner shadow-md w-full mb-10 h-[20vh] md:h-[50vh] -mt-16 rounded-b-3xl flex justify-center items-center"
   >
     <h1 class="italic font-black mt-12 md:mt-0">{{ project.name }}</h1>
   </div>
@@ -47,7 +48,11 @@
   <!-- panoramica -->
   <div class="sec3 opacity-0 mt-10">
     <h5 class="text-center font-bold mb-2">PANORAMICA</h5>
-    <img [src]="project.image" class="w-full h-full" />
+    <img
+      [src]="project.image"
+      alt="panoramica sito web di Giuseppe Gambino"
+      class="w-full h-full"
+    />
     <div
       class="border-t-2 border-white mt-10 py-6 flex flex-col md:flex-row justify-between gap-6"
     >

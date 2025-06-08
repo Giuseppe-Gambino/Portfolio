@@ -14,9 +14,13 @@
   </div>
   <div class="flex box-img me-[-20rem]">
     <div
+      role="img"
+      aria-label="foto disegno di Giuseppe Gambino"
       class="avatar bg-cover box rounded-3xl bg-slate-600 h-[45rem] w-[33.5rem]"
     ></div>
     <div
+      role="img"
+      aria-label="foto disegno della postazione"
       class="setup bg-cover bg-center box rounded-3xl bg-slate-600 h-[45rem] w-[33.5rem] mx-8"
     ></div>
   </div>
@@ -24,22 +28,24 @@
 <section class="container xl:px-32 h-[65vh] flex justify-end relative mt-36">
   <span class="pos1"></span>
   <div
-    class="text-about opacity-0 w-4/6 mt-5 ps-10 flex flex-col justify-between h-[70vh]"
+    class="text-about opacity-0 w-4/6 mt-5 ps-10 flex flex-col justify-between h-[70vh] pb-10"
   >
     <div>
       <h1 class="font-agrandirWideBold">About me</h1>
-      <h3 class="font-semibold mb-2 -mt-1">Full Stack Developer</h3>
+      <h3 class="font-semibold mb-2 -mt-2 text-[#c3eaff]">
+        Front-End Developer
+      </h3>
       <p class="text-3xl max-w-[45rem]">
-        Ciao!👋 Sono Giuseppe Gambino, ho 22 anni e sono un Junior Full Stack
-        Developer. Appassionato di tecnologia, design e sviluppo web, amo
-        trasformare idee in interfacce dinamiche e funzionali.
-        <br /><br />
+        Ciao!👋 Sono <strong>Giuseppe Gambino</strong>, ho 22 anni e sono un
+        <strong>Junior Front-End Developer</strong>. Appassionato di tecnologia,
+        design e sviluppo web, amo trasformare idee in interfacce dinamiche e
+        funzionali. <br /><br />
         Cerco sempre di crescere, imparare e costruire esperienze digitali
         curate e moderne.
       </p>
     </div>
     <div class="flex justify-between">
-      <h1 class="text-[80px] font-moontime font-light m--30">Essential</h1>
+      <h1 class="text-[80px] font-moontime font-light">Essential</h1>
 
       <!-- button -->
       <app-magnetic-button
@@ -76,7 +82,7 @@
   >
     <div
       *ngFor="let item of skills"
-      class="rounded-xl icon h-[12vh] w-[16vh] flex items-center justify-center"
+      class="rounded-xl icon h-[12vh] w-[16vh] flex items-center justify-center p-4"
     >
       <img [src]="item" class="h-14" />
     </div>
@@ -127,46 +133,61 @@
         </p>
       </div>
       <app-magnetic-button
+        class="mb-20"
         routerLink="/portfolio"
         circleText="VEDI ALTRO ••• VEDI ALTRO ••• VEDI ALTRO ••• "
         buttonText="VEDI ALTRO"
         buttonColor="#25bbb2"
       ></app-magnetic-button>
     </div>
-    <div class="h-[70vh] w-2/3 ms-10 mt-32 flex gap-10">
-      <div class="w-[33%] cursor-pointer">
+    <div class="h-[70vh] w-2/3 ms-10 mt-36 flex gap-10">
+      <article routerLink="/portfolio/0" class="w-[33%] cursor-pointer">
         <div
-          class="h-[60%] bg-gradient-to-tr from-blue-700 to bg-gray-950 rounded-xl"
-        ></div>
+          class="h-[60%] bg-gradient-to-tr from-[#2A365F] to bg-gray-950 rounded-xl flex justify-center items-center"
+        >
+          <h3 class="font-agrandirWideBlack">
+            {{ projects[0].name }}
+          </h3>
+        </div>
         <div class="px-3 mt-3">
-          <h6 class="font-agrandirWideBold">Stride E-commerce</h6>
-          <p class="text-base">
-            E-commerce di periferiche da gaming e professionali
+          <h6 class="font-agrandirWideBold">
+            {{ projects[0].name }} E-commerce
+          </h6>
+          <p class="text-base truncate">
+            {{ projects[0].description }}
           </p>
         </div>
-      </div>
-      <div class="w-[33%] cursor-pointer">
+      </article>
+      <article routerLink="/portfolio/2" class="w-[33%] cursor-pointer">
         <div
-          class="h-[60%] bg-gradient-to-tr from-red-950 to bg-gray-950 rounded-xl"
-        ></div>
+          class="h-[60%] bg-gradient-to-tr from-red-950 to bg-gray-950 rounded-xl flex justify-center items-center"
+        >
+          <h3 class="font-agrandirWideBlack">
+            {{ projects[2].name }}
+          </h3>
+        </div>
         <div class="px-3 mt-3">
-          <h6 class="font-agrandirWideBold">Netflix Clone 7h</h6>
-          <p class="text-base">
-            Riproduzione di Netflix in 7 ore con Angular e bootstrap
+          <h6 class="font-agrandirWideBold">{{ projects[2].name }} 7h</h6>
+          <p class="text-base truncate">
+            {{ projects[2].description }}
           </p>
         </div>
-      </div>
-      <div class="w-[33%] cursor-pointer">
+      </article>
+      <article routerLink="/portfolio/1" class="w-[33%] cursor-pointer">
         <div
-          class="h-[60%] bg-gradient-to-tr from-green-700 to bg-gray-950 rounded-xl"
-        ></div>
+          class="h-[60%] bg-gradient-to-tr from-green-700 to bg-gray-950 rounded-xl flex justify-center items-center"
+        >
+          <h3 class="font-agrandirWideBlack">
+            {{ projects[1].name }}
+          </h3>
+        </div>
         <div class="px-3 mt-3">
-          <h6 class="font-agrandirWideBold">Spotify Clone 1Week</h6>
-          <p class="text-base">
-            Riproduzione di Spotify in 1 settimana in vanilla JS e CSS in team
+          <h6 class="font-agrandirWideBold">{{ projects[1].name }} 1Week</h6>
+          <p class="text-base truncate">
+            {{ projects[1].description }}
           </p>
         </div>
-      </div>
+      </article>
     </div>
   </section>
 </section>

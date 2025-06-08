@@ -19,6 +19,8 @@ export class ProjectComponent {
 
   project!: Project;
 
+  gradientStyle!: { [key: string]: string };
+
   ngAfterViewInit() {
     const tl = gsap.timeline({ defaults: { ease: 'power4.out', duration: 1 } });
 
@@ -37,6 +39,9 @@ export class ProjectComponent {
     if (this.route.snapshot.paramMap.get('id') !== null) {
       const id = parseInt(this.route.snapshot.paramMap.get('id')!);
       this.project = this.projects[id];
+      this.gradientStyle = {
+        'background-image': `linear-gradient(to top right, ${this.project.color}, #030712)`,
+      };
     }
   }
 }

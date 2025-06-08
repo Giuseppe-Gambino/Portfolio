@@ -45,10 +45,10 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    gsap.to('.contact', {
-      y: -200,
-      duration: 1.5,
-    });
+    // gsap.to('.contact', {
+    //   y: -200,
+    //   duration: 1.5,
+    // });
   }
 
   scrollDown() {

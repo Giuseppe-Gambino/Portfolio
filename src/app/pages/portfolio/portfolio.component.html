@@ -14,28 +14,35 @@
         <div
           class="rounded-t-xl h-full w-full mt-16 overflow-hidden relative hidden md:block"
         >
-          <div
+          <article
             #preview1
-            class="preview h-full w-full bg-gradient-to-tr from-[#1a1a31] to bg-gray-950 flex justify-center items-center absolute"
+            class="preview h-full w-full bg-gradient-to-tr from-[#2A365F] to bg-gray-950 flex justify-center items-center absolute"
           >
             <h1 class="italic font-black">STRIDE</h1>
-          </div>
-          <div
+          </article>
+
+          <article
             #preview2
-            class="preview h-full w-full bg-gradient-to-tr from-red-950 to bg-gray-950 flex justify-center items-center absolute"
-          >
-            <h1 class="italic font-black">NETFLIX</h1>
-          </div>
-          <div
-            #preview3
             class="preview h-full w-full bg-gradient-to-tr from-green-700 to bg-gray-950 flex justify-center items-center absolute"
           >
             <h1 class="italic font-black">SPOTIFY</h1>
-          </div>
-          <div
+          </article>
+          <article
+            #preview3
+            class="preview h-full w-full bg-gradient-to-tr from-red-950 to bg-gray-950 flex justify-center items-center absolute"
+          >
+            <h1 class="italic font-black">NGEFLIX</h1>
+          </article>
+          <article
+            #preview4
+            class="preview h-full w-full bg-gradient-to-tr from-[#EFD633] to bg-gray-950 flex justify-center items-center absolute"
+          >
+            <h1 class="italic font-black">MEDIUM</h1>
+          </article>
+          <article
             #preview0
-            class="preview h-full w-full bg-gradient-to-tr from-gray-700 to bg-gray-950 flex justify-center items-center absolute"
-          ></div>
+            class="preview h-full w-full bg-gradient-to-tr from-gray-500 to bg-gray-950 flex justify-center items-center absolute"
+          ></article>
         </div>
       </div>
 
@@ -64,10 +71,10 @@
           <div class="flex project-title">
             <h1 class="arrow">➧</h1>
             <h1 class="font-agrandirWide text-4xl md:text-7xl tracking-wider">
-              <a routerLink="/portfolio/1">NetFlix</a>
+              <a routerLink="/portfolio/1">Spotify</a>
             </h1>
           </div>
-          <h6 class="text-base md:text-xl">- Fake Netflix</h6>
+          <h6 class="text-base md:text-xl">- Clone Spotify</h6>
         </li>
         <!-- item -->
         <li
@@ -78,22 +85,24 @@
           <div class="flex project-title">
             <h1 class="arrow">➧</h1>
             <h1 class="font-agrandirWide text-4xl md:text-7xl tracking-wider">
-              <a routerLink="/portfolio/2">Spotify</a>
+              <a routerLink="/portfolio/2">NgeFlix</a>
             </h1>
           </div>
-          <h6 class="text-base md:text-xl">- Fake Spotify</h6>
+          <h6 class="text-base md:text-xl">- Fake Film Streaming</h6>
         </li>
         <!-- item -->
         <li
+          (mouseenter)="showPreview(preview4)"
+          (mouseleave)="hidePreview(preview4)"
           class="flex md:flex-col justify-between items-center md:justify-normal md:items-start border-b-2 md:border-b pb-2 md:pb-4"
         >
           <div class="flex project-title">
             <h1 class="arrow">➧</h1>
             <h1 class="font-agrandirWide text-4xl md:text-7xl tracking-wider">
-              <a routerLink="/portfolio/3">AirBnB</a>
+              <a routerLink="/portfolio/3">Medium</a>
             </h1>
           </div>
-          <h6 class="text-base md:text-xl">- Fake AirBnB</h6>
+          <h6 class="text-base md:text-xl">- Home Medium</h6>
         </li>
       </ul>
     </div>

@@ -4,7 +4,8 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 import { NavAnimationService } from '../../../mainComponent/navbar/nav-animation.service';
 import ScrollSmoother from 'gsap/ScrollSmoother';
 import { LenisService } from '../../../services/lenis.service';
-import { ViewportScroller } from '@angular/common';
+import { Project, PROJECTS } from '../../../data/projects';
+
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 @Component({
@@ -20,6 +21,8 @@ export class HomeDesktopComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
   }
+
+  projects: Project[] = PROJECTS;
 
   skills: string[] = [
     'angular.png',
