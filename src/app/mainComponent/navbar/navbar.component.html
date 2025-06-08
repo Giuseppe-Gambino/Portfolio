@@ -54,7 +54,7 @@
     <button
       [ngClass]="{ menu: isOpen, 'menu-closed': !isOpen }"
       (click)="click()"
-      class="bg-gray-800 bb rounded-full p-5 font-moontime text-5xl"
+      class="bg-gray-800 bb rounded-full p-5 font-moontime text-5xl active:scale-75 duration-300"
     >
       <span *ngIf="isOpen">G</span
       ><svg
