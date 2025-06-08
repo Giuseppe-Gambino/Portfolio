@@ -6,7 +6,7 @@ import ScrollSmoother from 'gsap/ScrollSmoother';
 import { LenisService } from '../../../services/lenis.service';
 import { Project, PROJECTS } from '../../../data/projects';
 import emailjs from 'emailjs-com';
-import { environment } from '../../../../environments/environment';
+import { environment } from '../../../../environments/environment.prod';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
