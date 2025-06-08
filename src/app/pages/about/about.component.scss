@@ -1,5 +1,8 @@
 .avatar {
   background-image: url("/avatar.png");
+  @media (max-width: 768px) {
+    background-position-y: -1rem;
+  }
 }
 
 .setup {
