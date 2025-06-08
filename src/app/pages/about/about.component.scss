@@ -13,3 +13,89 @@
 li {
   padding-block: 0.5rem;
 }
+
+.shadow-icon {
+  box-shadow: inset -20px 0px 20px 7px #1e232a,
+    inset 20px -1px 20px 7px rgb(30, 35, 42), -20px 0px 20px 7px #1e232a,
+    20px 0px 20px 7px rgb(30, 35, 42);
+}
+
+@keyframes infinity {
+  to {
+    left: -80px;
+  }
+}
+
+.infinity-icon {
+  background: linear-gradient(
+    122deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(255 255 255 / 47%) 71%,
+    rgb(255 255 255 / 34%) 100%
+  );
+  position: absolute;
+  left: 100%;
+  animation: infinity 10s linear infinite;
+
+  img {
+    opacity: 1;
+  }
+}
+
+.icon1 {
+  animation-delay: -8s;
+}
+
+.icon2 {
+  animation-delay: -6s;
+}
+
+.icon3 {
+  animation-delay: -4s;
+}
+.icon4 {
+  animation-delay: -2s;
+}
+.icon5 {
+  animation-delay: 0s;
+}
+
+@keyframes infinity-reverse {
+  to {
+    right: -80px;
+  }
+}
+
+.infinity-icon-reverse {
+  background: linear-gradient(
+    122deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(255 255 255 / 47%) 71%,
+    rgb(255 255 255 / 34%) 100%
+  );
+  position: absolute;
+  right: 100%;
+  animation: infinity-reverse 10s linear infinite;
+
+  img {
+    opacity: 1;
+  }
+}
+
+.icon1- {
+  animation-delay: -8s;
+}
+
+.icon2- {
+  animation-delay: -6s;
+}
+
+.icon3- {
+  animation-delay: -4s;
+}
+.icon4- {
+  animation-delay: -2s;
+}
+.icon5- {
+  animation-delay: 0s;
+}
