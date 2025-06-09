@@ -1,27 +1,40 @@
-# Portfolio
+# 🌐 Portfolio Personale – [Giuseppe Gambino]
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
+Benvenuto nel repository del mio **portfolio personale**!  
+Questo sito rappresenta il mio spazio online come **junior frontend developer** con basi full stack, dove condivido i miei progetti, la mia esperienza e la mia crescita nel mondo dello sviluppo web.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🔗 Live Demo
 
-## Code scaffolding
+👉 [Visita il mio portfolio](https://share.google/vEeMbz5dmaH9pqGFo)  
+*(Sostituisci con il tuo link effettivo)*
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 📌 Cosa troverete
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Una selezione dei miei progetti personali e real-world
+- Una breve presentazione di me, delle mie competenze e dei miei obiettivi
+- UI custom, micro-animazioni fluide, attenzione al design
+- Un sito moderno e veloce, realizzato con passione
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🧰 Tech Stack
 
-## Running end-to-end tests
+- **Framework:** Angular
+- **Styling:** TailwindCSS, SCSS
+- **Animazioni:** GSAP, Lenis (smooth scroll)
+- **Tooling:** Angular CLI
+- **Responsive:** Mobile e desktop già funzionanti, work in progress su alcuni breakpoint
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## 📸 Screenshot
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+> *(Aggiungi immagini nella cartella `./screenshots` e sblocca questa sezione)*
+
+```markdown
+![Desktop Preview](./screenshots/desktop.png)
+![Mobile Preview](./screenshots/mobile.png)
