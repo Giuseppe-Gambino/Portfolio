@@ -2,6 +2,10 @@ li {
   overflow-x: hidden;
 }
 
+.sfondo {
+  background-image: url("/sfondo.png");
+}
+
 .arrow {
   padding-right: 0.8rem;
   transform: translateX(-100%) translateZ(0px);

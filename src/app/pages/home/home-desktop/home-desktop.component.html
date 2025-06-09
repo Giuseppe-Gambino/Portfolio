@@ -1,3 +1,4 @@
+<section class="h-[100vh] w-[100vw] sfondo bg-cover fixed top-0"></section>
 <section class="container h-[90vh] flex items-center justify-end relative">
   <div class="hero-text min-w-fit max-h-fit absolute start-0 z-10">
     <h1 class="text-[100px] font-moontime font-light m--30">Full stack.</h1>
@@ -25,6 +26,7 @@
     ></div>
   </div>
 </section>
+<!-- ab -->
 <section class="container xl:px-32 h-[65vh] flex justify-end relative mt-36">
   <span class="pos1"></span>
   <div
@@ -59,11 +61,11 @@
 </section>
 <!-- sezione skills -->
 <section
-  class="container xl:px-32 sticky top-0 h-[100vh] mt-52 skills flex justify-between pt-32"
+  class="container sticky top-0 md:px-0 lg:px-0 xl:px-32 h-[100vh] mt-52 skills flex lg:justify-between gap-5 pt-32"
 >
   <div class="text-skills">
-    <h1 class="font-agrandirWideBold">Le mie Skills</h1>
-    <p class="max-w-[24.5rem] text-2xl">
+    <h1 class="font-agrandirWideBold whitespace-nowrap">Le mie Skills</h1>
+    <p class="max-w-[24.5rem] md:text-xl xl:text-2xl">
       Nel corso dei miei progetti personali e formativi, ho sviluppato
       competenze solide in sviluppo web frontend, lavorando con tecnologie
       moderne come <strong class="text-[#38b6ff]">Angular</strong>,
@@ -78,11 +80,11 @@
     </p>
   </div>
   <div
-    class="h-[70vh] mt-24 mx-32 grid justify-items-center grid-cols-[repeat(3,1fr)] xl:grid-cols-[repeat(4,1fr)] grid-rows-[repeat(5,1fr)] gap-10"
+    class="h-[70vh] mt-24 lg:me-12 xl:me-32 grid justify-items-center grid-cols-[repeat(3,1fr)] xl:grid-cols-[repeat(4,1fr)] grid-rows-[repeat(5,1fr)] lg:gap-4 xl:gap-10"
   >
     <div
       *ngFor="let item of skills"
-      class="rounded-xl icon h-[12vh] w-[16vh] flex items-center justify-center p-4"
+      class="rounded-xl icon md:h-[5rem] md:w-[6rem] lg:h-[6rem] lg:w-[7rem] xl:h-[7.5rem] xl:w-[10rem] flex items-center justify-center p-4"
     >
       <img [src]="item" class="h-14" />
     </div>
