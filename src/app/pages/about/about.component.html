@@ -1,27 +1,29 @@
-<section class="container xl:px-32 flex flex-col justify-center">
-  <section class="mb-[10vh] md:mb-[30vh]">
+<section
+  class="container flex flex-col justify-center overflow-hidden xl:px-32"
+>
+  <section class="mb-[10vh] xl:mb-[30vh] mt-5">
     <div
-      class="mt-4 md:mt-0 grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(1,1fr)] md:grid-rows-[repeat(2,1fr)] gap-y-10 md:gap-y-[10px] gap-x-0 grid-flow-row items-end"
+      class="mt-4 md:mt-0 grid grid-cols-[repeat(2,1fr)] grid-rows-[repeat(1,1fr)] xl:grid-rows-[repeat(2,1fr)] gap-y-10 md:gap-y-[3rem] lg:gap-y-[10px] gap-x-0 grid-flow-row items-end"
     >
       <!-- titolo -->
       <div class="row-1 row-2 col-1 col-2">
         <h1
-          class="font-agrandirWideBold text-[3rem] md:text-[10rem] xl:text-[15rem] mb-8 md:-mb-10 relative z-10"
+          class="font-agrandirWideBold text-[3rem] md:text-[6rem] lg:text-[10rem] xl:text-[15rem] mb-8 md:mb-9 lg:-mb-10 relative z-10"
         >
           About
         </h1>
       </div>
       <!-- img -->
-      <div class="row-1 md:row-start-1 md:row-end-3 col-start-2 col-ens-3">
+      <div class="col-start-2 row-1 lg:row-start-1 lg:row-end-3 col-ens-3">
         <div
           role="img"
           aria-label="foto disegno di Giuseppe Gambino"
-          class="avatar h-[20vh] md:h-[50vh] xl:h-[80vh] w-full bg-cover ms-2 md:-ms-5 rounded-3xl"
+          class="avatar h-[20vh] md:h-[30vh] max-lg:w-[40vw] lg:h-[50vh] max-xl:w-[50vw] xl:h-[70vh] w-full bg-cover ms-2 md:-ms-5 rounded-3xl"
         ></div>
       </div>
       <!-- testo -->
       <div
-        class="row-2 row-3 col-start-1 col-end-3 md:col-start-1 md:col-end-1 md:pe-32"
+        class="col-start-1 col-end-3 row-2 row-3 lg:col-start-1 lg:col-end-1 md:pe-10 lg:pe-24 xl:pe-32"
       >
         <p class="text-base md:text-xl xl:text-[1.5rem]">
           Hey! 👋 Mi chiamo <strong>Giuseppe Gambino</strong>, ho
@@ -50,39 +52,41 @@
   </section>
   <!-- sezione percorso/skills -->
   <section class="mb-[10vh] md:mb-[23vh]">
-    <div class="flex flex-col md:flex-row">
+    <div class="flex flex-col xl:flex-row">
       <!-- img -->
-      <div class="md:w-2/5 mb-6 md:mb-0">
-        <div class="flex flex-col-reverse md:flex-col w-full">
+      <div class="mb-6 overflow-hidden xl:w-2/5 md:mb-0">
+        <div
+          class="flex flex-col-reverse w-full mb-0 xl:flex-col md:mb-10 max-xl:items-center"
+        >
           <div
-            class="h-40 w-[100%] md:w-[60vh] md:h-[50vh] xl:h-[65vh] bg-cover z-10 rounded-3xl"
+            class="h-40 w-[100%] md:w-[60vh] md:h-fit xl:h-[65vh] bg-cover z-10 rounded-3xl"
           >
             <div
               class="h-[8.5rem] w-full relative overflow-hidden shadow-icon flex flex-col gap-4 justify-center items-center"
             >
-              <div class="w-fit flex items-center mt-4">
+              <div class="flex items-center mt-4 w-fit">
                 <div
-                  class="infinity-icon icon1 h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon icon1 -z-10"
                 >
                   <img src="angular.png" class="h-14" />
                 </div>
                 <div
-                  class="infinity-icon icon2 h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon icon2 -z-10"
                 >
                   <img src="tailwind.png" class="h-14" />
                 </div>
                 <div
-                  class="infinity-icon icon3 h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon icon3 -z-10"
                 >
                   <img src="css.png" class="h-14" />
                 </div>
                 <div
-                  class="infinity-icon icon4 h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon icon4 -z-10"
                 >
                   <img src="github.png" class="h-14" />
                 </div>
                 <div
-                  class="infinity-icon icon5 h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon icon5 -z-10"
                 >
                   <img src="gsap.png" class="h-8 px-1" />
                 </div>
@@ -91,91 +95,91 @@
             <div
               class="h-[8.5rem] w-full relative overflow-hidden shadow-icon flex-col gap-4 justify-center items-center hidden md:flex"
             >
-              <div class="w-fit flex items-center mt-4">
+              <div class="flex items-center mt-4 w-fit">
                 <div
-                  class="infinity-icon-reverse icon1- h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon-reverse icon1- -z-10"
                 >
                   <img src="ts.png" class="h-14" />
                 </div>
                 <div
-                  class="infinity-icon-reverse icon2- h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon-reverse icon2- -z-10"
                 >
                   <img src="html.png" class="h-14" />
                 </div>
                 <div
-                  class="infinity-icon-reverse icon3- h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon-reverse icon3- -z-10"
                 >
                   <img src="springboot.png" class="h-14" />
                 </div>
                 <div
-                  class="infinity-icon-reverse icon4- h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon-reverse icon4- -z-10"
                 >
                   <img src="sass.png" class="h-14" />
                 </div>
                 <div
-                  class="infinity-icon-reverse icon5- h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon-reverse icon5- -z-10"
                 >
                   <img src="postgresql.png" class="h-14" />
                 </div>
               </div>
             </div>
             <div
-              class="h-[8.5rem] w-full relative overflow-hidden shadow-icon flex-col gap-4 justify-center items-center hidden md:flex"
+              class="h-[8.5rem] w-full relative overflow-hidden shadow-icon flex-col gap-4 justify-center items-center hidden xl:flex"
             >
-              <div class="w-fit flex items-center mt-4">
+              <div class="flex items-center mt-4 w-fit">
                 <div
-                  class="infinity-icon icon1 h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon icon1 -z-10"
                 >
                   <img src="figma.png" class="h-14" />
                 </div>
                 <div
-                  class="infinity-icon icon2 h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon icon2 -z-10"
                 >
                   <img src="canva.png" class="h-14" />
                 </div>
                 <div
-                  class="infinity-icon icon3 h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon icon3 -z-10"
                 >
                   <img src="react.png" class="h-14" />
                 </div>
                 <div
-                  class="infinity-icon icon4 h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon icon4 -z-10"
                 >
                   <img src="docker.png" class="h-14" />
                 </div>
                 <div
-                  class="infinity-icon icon5 h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon icon5 -z-10"
                 >
                   <img src="vs.png" class="h-14" />
                 </div>
               </div>
             </div>
             <div
-              class="h-[8.5rem] w-full relative overflow-hidden shadow-icon flex-col gap-4 justify-center items-center hidden md:flex"
+              class="h-[8.5rem] w-full relative overflow-hidden shadow-icon flex-col gap-4 justify-center items-center hidden xl:flex"
             >
-              <div class="w-fit flex items-center mt-4">
+              <div class="flex items-center mt-4 w-fit">
                 <div
-                  class="infinity-icon-reverse icon1- h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon-reverse icon1- -z-10"
                 >
                   <img src="intellij.png" class="h-14" />
                 </div>
                 <div
-                  class="infinity-icon-reverse icon2- h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon-reverse icon2- -z-10"
                 >
                   <img src="ai.png" class="h-14" />
                 </div>
                 <div
-                  class="infinity-icon-reverse icon3- h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon-reverse icon3- -z-10"
                 >
                   <img src="gpt.png" class="h-14" />
                 </div>
                 <div
-                  class="infinity-icon-reverse icon4- h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon-reverse icon4- -z-10"
                 >
                   <img src="python.png" class="h-14" />
                 </div>
                 <div
-                  class="infinity-icon-reverse icon5- h-20 w-20 p-1 -z-10 rounded-md flex justify-center items-center"
+                  class="flex items-center justify-center w-20 h-20 p-1 rounded-md infinity-icon-reverse icon5- -z-10"
                 >
                   <img src="c.png" class="h-14" />
                 </div>
@@ -188,15 +192,15 @@
         </div>
       </div>
       <!-- testo -->
-      <div class="md:w-3/5">
-        <div class="flex flex-col h-full">
+      <div class="xl:w-3/5">
+        <div class="flex flex-col h-full xl:ps-10">
           <h1
             class="font-agrandirWideBold text-[2rem] md:text-[4rem] xl:text-[6rem] mb-2 md:-mb-1"
           >
             Il mio Stack
           </h1>
           <div class="text-base md:text-xl">
-            <p class="text-base xl:text-[1.5rem]">
+            <p class="text-base md:text-xl xl:text-[1.5rem]">
               Dopo aver esplorato da autodidatta il mondo del web, ho deciso di
               approfondire con un percorso strutturato e mi sono buttato a
               capofitto nello sviluppo full stack.
@@ -204,7 +208,9 @@
               Oggi lavoro principalmente con:
             </p>
 
-            <ul class="text-base xl:text-[1.5rem] list-disc ps-10 py-3">
+            <ul
+              class="text-base md:text-xl xl:text-[1.5rem] list-disc ps-10 py-3"
+            >
               <li>
                 <strong class="text-[#38b6ff]">Angular </strong>(frontend)
               </li>
@@ -214,7 +220,6 @@
               </li>
               <li>
                 <strong class="text-[#38b6ff]">Spring Boot</strong> + PostgreSQL
-                (backend robusto)
               </li>
               <li>Integrazioni con servizi come Stripe, Cloudinary</li>
               <li>
@@ -222,7 +227,7 @@
               </li>
             </ul>
             <br />
-            <p class="text-base xl:text-[1.5rem]">
+            <p class="text-base md:text-xl xl:text-[1.5rem]">
               Cerco sempre di bilanciare struttura, performance e stile, con un
               occhio attento a dettagli, transizioni fluide e coerenza visiva.
               Mi piace quando le cose funzionano bene, ma anche quando hanno
@@ -235,9 +240,9 @@
   </section>
   <!-- il mio set-up -->
   <section class="mb-[10vh] md:mb-[24vh]">
-    <div class="flex flex-col-reverse md:flex-row">
+    <div class="flex flex-col-reverse xl:flex-row">
       <!-- testo -->
-      <div class="flex flex-col h-full md:w-2/5">
+      <div class="flex flex-col h-full xl:w-2/5">
         <h1
           class="font-agrandirWideBold text-[2rem] md:text-[4rem] xl:text-[6rem] z-10 mb-2 md:mb-4 leading-[1.1]"
         >
@@ -245,7 +250,7 @@
           Postazione
         </h1>
         <div class="text-base md:text-xl">
-          <p class="text-base xl:text-[1.5rem] md:pe-[6rem]">
+          <p class="text-base md:text-xl xl:text-[1.5rem] md:pe-[6rem]">
             l mio spazio di lavoro è il mio piccolo mondo.
             <br /><br />
             È lì che prendo un’idea e cerco di trasformarla in qualcosa di
@@ -259,13 +264,15 @@
         </div>
       </div>
       <!-- img -->
-      <div class="md:w-3/5 flex flex-col justify-end">
+      <div class="flex flex-col justify-end xl:w-3/5">
         <div
           role="img"
           aria-label="foto disegno della postazione"
-          class="setup bg-cover box rounded-3xl bg-slate-600 bg-right w-full md:w-[98%] h-[20vh] md:h-[28rem]"
+          class="setup bg-cover bg-no-repeat box rounded-3xl bg-slate-600 bg-right w-full md:w-[98%] h-[20vh] md:h-[35vh] xl:h-[28rem]"
         ></div>
-        <h4 class="font-moontime text-[2rem] md:text-[5rem] text-end me-8">
+        <h4
+          class="font-moontime text-[2rem] md:text-[4rem] xl:text-[5rem] text-end me-8"
+        >
           dove tutto nasce
         </h4>
       </div>

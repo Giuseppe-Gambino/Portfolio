@@ -1,10 +1,10 @@
 <nav
-  class="z-40 fixed nav-bar top-6 mt-6 xl:mx-32 invisible md:visible backdrop-blur-sm"
+  class="fixed z-40 invisible mt-6 nav-bar top-6 xl:mx-32 xl:visible backdrop-blur-sm"
 >
   <div
-    class="z-50 py-2 px-4 bg-white opacity-40 rounded-md max-w-fit max-h-fit"
+    class="z-50 px-4 py-2 bg-white rounded-md opacity-40 max-w-fit max-h-fit"
   >
-    <ul class="flex gap-5 text-black font-semibold">
+    <ul class="flex gap-5 font-semibold text-black">
       <li routerLink="" class="cursor-pointer">Home</li>
       <li routerLink="/portfolio" class="cursor-pointer">Progetti</li>
       <li routerLink="/about" class="cursor-pointer">About</li>
@@ -13,14 +13,14 @@
   </div>
 </nav>
 <!-- nav mobile -->
-<nav class="visible md:hidden fixed bottom-8 right-6 text-right w-fit z-50">
+<nav class="fixed z-50 visible text-right xl:hidden bottom-8 right-6 w-fit">
   <div class="nav-container">
     <h3
       #navItem
       (click)="click()"
       routerLink=""
       *ngIf="isOpen"
-      class="nav-item home absolute font-agrandirWideBold whitespace-nowrap"
+      class="absolute nav-item home font-agrandirWideBold whitespace-nowrap"
     >
       Home
     </h3>
@@ -29,7 +29,7 @@
       (click)="click()"
       routerLink="/about"
       *ngIf="isOpen"
-      class="nav-item about absolute font-agrandirWideBold whitespace-nowrap"
+      class="absolute nav-item about font-agrandirWideBold whitespace-nowrap"
     >
       About me
     </h3>
@@ -38,7 +38,7 @@
       (click)="click()"
       routerLink="/portfolio"
       *ngIf="isOpen"
-      class="nav-item projects absolute font-agrandirWideBold 4"
+      class="absolute nav-item projects font-agrandirWideBold 4"
     >
       Progetti
     </h3>
@@ -47,14 +47,14 @@
       (click)="click()"
       routerLink="/contact"
       *ngIf="isOpen"
-      class="nav-item contact absolute font-agrandirWideBold"
+      class="absolute nav-item contact font-agrandirWideBold"
     >
       Contattami
     </h3>
     <button
       [ngClass]="{ menu: isOpen, 'menu-closed': !isOpen }"
       (click)="click()"
-      class="bg-gray-800 bb rounded-full p-5 font-moontime text-5xl active:scale-75 duration-300"
+      class="p-5 text-5xl duration-300 bg-gray-800 rounded-full bb font-moontime active:scale-75"
     >
       <span *ngIf="isOpen">G</span
       ><svg

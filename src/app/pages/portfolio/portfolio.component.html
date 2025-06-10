@@ -1,22 +1,24 @@
 <section
-  class="h-[100vh] w-[100vw] sfondo bg-cover bg-right md:bg-center fixed top-0"
+  class="h-[100vh] w-[100vw] sfondo bg-cover bg-right xl:bg-center fixed top-0"
 ></section>
 
 <div class="relative z-10">
   <section
-    class="container xl:px-32 min-h-[100vh] flex flex-col md:justify-end overflow-hidden"
+    class="container xl:px-32 min-h-[100vh] flex flex-col xl:justify-end overflow-hidden"
   >
-    <div class="mt-10 md:mt-0">
-      <h1 class="font-agrandirWideBold text-4xl md:text-[3.5rem]">Progetti</h1>
-      <h6 class="text-xl font-agrandir tracking-wide mt-4">
+    <div class="mt-10 xl:mt-0">
+      <h1 class="font-agrandirWideBold text-4xl lg:text-6xl xl:text-[3.5rem]">
+        Progetti
+      </h1>
+      <h6 class="mt-4 text-xl tracking-wide font-agrandir">
         Questa è lo showcase dei progetti <br />
         sviluppati durante il mio percorso
       </h6>
     </div>
-    <div class="flex flex-col md:flex-row justify-between">
-      <div class="md:w-1/2 me-32">
+    <div class="flex flex-col justify-between xl:flex-row">
+      <div class="xl:w-1/2 me-32">
         <div
-          class="rounded-t-xl h-full w-full mt-16 overflow-hidden relative hidden md:block"
+          class="relative hidden w-full h-full mt-16 overflow-hidden rounded-t-xl xl:block"
         >
           <article
             #preview1
@@ -27,13 +29,13 @@
 
           <article
             #preview2
-            class="preview h-full w-full bg-gradient-to-tr from-green-700 to bg-gray-950 flex justify-center items-center absolute"
+            class="absolute flex items-center justify-center w-full h-full preview bg-gradient-to-tr from-green-700 to bg-gray-950"
           >
             <h1 class="italic font-black">SPOTIFY</h1>
           </article>
           <article
             #preview3
-            class="preview h-full w-full bg-gradient-to-tr from-red-950 to bg-gray-950 flex justify-center items-center absolute"
+            class="absolute flex items-center justify-center w-full h-full preview bg-gradient-to-tr from-red-950 to bg-gray-950"
           >
             <h1 class="italic font-black">NGEFLIX</h1>
           </article>
@@ -45,68 +47,78 @@
           </article>
           <article
             #preview0
-            class="preview h-full w-full bg-gradient-to-tr from-gray-500 to bg-gray-950 flex justify-center items-center absolute"
+            class="absolute flex items-center justify-center w-full h-full preview bg-gradient-to-tr from-gray-500 to bg-gray-950"
           ></article>
         </div>
       </div>
 
-      <ul class="flex flex-col gap-3 md:gap-6 md:w-1/2 mt-8 md:mt-14">
+      <ul class="flex flex-col gap-4 mt-8 xl:gap-6 xl:w-1/2 xl:mt-14">
         <!-- item -->
         <hr />
         <li
           (mouseenter)="showPreview(preview1)"
           (mouseleave)="hidePreview(preview1)"
-          class="flex md:flex-col justify-between items-center md:justify-normal md:items-start border-b-2 md:border-b pb-2 md:pb-4"
+          class="flex items-center justify-between pb-2 border-b-2 xl:flex-col xl:justify-normal xl:items-start xl:border-b xl:pb-4"
         >
           <div class="flex project-title">
             <h1 class="arrow">➧</h1>
-            <h1 class="font-agrandirWide text-4xl md:text-7xl tracking-wider">
+            <h1
+              class="text-4xl tracking-wider lg:text-6xl font-agrandirWide xl:text-7xl"
+            >
               <a routerLink="/portfolio/0">Stride</a>
             </h1>
           </div>
-          <h6 class="text-base md:text-xl">- E-commerce</h6>
+          <h6 class="text-base lg:text-2xl xl:text-xl">- E-commerce</h6>
         </li>
         <!-- item -->
         <li
           (mouseenter)="showPreview(preview2)"
           (mouseleave)="hidePreview(preview2)"
-          class="flex md:flex-col justify-between items-center md:justify-normal md:items-start border-b-2 md:border-b pb-2 md:pb-4"
+          class="flex items-center justify-between pb-2 border-b-2 xl:flex-col xl:justify-normal xl:items-start xl:border-b xl:pb-4"
         >
           <div class="flex project-title">
             <h1 class="arrow">➧</h1>
-            <h1 class="font-agrandirWide text-4xl md:text-7xl tracking-wider">
+            <h1
+              class="text-4xl tracking-wider lg:text-6xl font-agrandirWide xl:text-7xl"
+            >
               <a routerLink="/portfolio/1">Spotify</a>
             </h1>
           </div>
-          <h6 class="text-base md:text-xl">- Clone Spotify</h6>
+          <h6 class="text-base lg:text-2xl xl:text-xl">- Clone Spotify</h6>
         </li>
         <!-- item -->
         <li
           (mouseenter)="showPreview(preview3)"
           (mouseleave)="hidePreview(preview3)"
-          class="flex md:flex-col justify-between items-center md:justify-normal md:items-start border-b-2 md:border-b pb-2 md:pb-4"
+          class="flex items-center justify-between pb-2 border-b-2 xl:flex-col xl:justify-normal xl:items-start xl:border-b xl:pb-4"
         >
           <div class="flex project-title">
             <h1 class="arrow">➧</h1>
-            <h1 class="font-agrandirWide text-4xl md:text-7xl tracking-wider">
+            <h1
+              class="text-4xl tracking-wider lg:text-6xl font-agrandirWide xl:text-7xl"
+            >
               <a routerLink="/portfolio/2">NgeFlix</a>
             </h1>
           </div>
-          <h6 class="text-base md:text-xl">- Fake Film Streaming</h6>
+          <h6 class="text-base lg:text-2xl xl:text-xl">
+            - Fake Film Streaming
+          </h6>
         </li>
         <!-- item -->
         <li
           (mouseenter)="showPreview(preview4)"
           (mouseleave)="hidePreview(preview4)"
-          class="flex md:flex-col justify-between items-center md:justify-normal md:items-start border-b-2 md:border-b pb-2 md:pb-4"
+          class="flex items-center justify-between pb-2 border-b-2 xl:flex-col xl:justify-normal xl:items-start xl:border-b xl:pb-4"
         >
           <div class="flex project-title">
             <h1 class="arrow">➧</h1>
-            <h1 class="font-agrandirWide text-4xl md:text-7xl tracking-wider">
+            <h1
+              class="text-4xl tracking-wider lg:text-6xl font-agrandirWide xl:text-7xl"
+            >
               <a routerLink="/portfolio/3">Medium</a>
             </h1>
           </div>
-          <h6 class="text-base md:text-xl">- Home Medium</h6>
+          <h6 class="text-base lg:text-2xl xl:text-xl">- Home Medium</h6>
         </li>
       </ul>
     </div>
