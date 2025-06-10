@@ -8,7 +8,6 @@ Questo sito rappresenta il mio spazio online come **junior frontend developer** 
 ## 🔗 Live Demo
 
 👉 [Visita il mio portfolio](https://share.google/vEeMbz5dmaH9pqGFo)  
-*(Sostituisci con il tuo link effettivo)*
 
 ---
 
@@ -36,5 +35,5 @@ Questo sito rappresenta il mio spazio online come **junior frontend developer** 
 > *(Aggiungi immagini nella cartella `./screenshots` e sblocca questa sezione)*
 
 ```markdown
-![Desktop Preview](./screenshots/desktop.png)
+![Desktop Preview](./public/avatar.png)
 ![Mobile Preview](./screenshots/mobile.png)
