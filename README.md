@@ -35,5 +35,5 @@ Questo sito rappresenta il mio spazio online come **junior frontend developer** 
 > *(Aggiungi immagini nella cartella `./screenshots` e sblocca questa sezione)*
 
 ```markdown
-![Desktop Preview](./public/avatar.png)
+![Desktop Preview](./screenshots/desk.png)
 ![Mobile Preview](./screenshots/mobile.png)
