@@ -18,8 +18,8 @@ export const PROJECTS: Project[] = [
     year: 2025,
     description: `STRIDE è un e-commerce full stack sviluppata in autonomia come progetto finale del mio percorso con Epicode. Il progetto, realizzato in un mese, rappresenta una piattaforma completa per la vendita online, con funzionalità moderne sia lato utente che lato amministratore.`,
     image: 'STRIDE.png',
-    link: 'https://fascinating-baklava-37ead4.netlify.app',
-    github: 'https://github.com/Giuseppe-Gambino/Capstone-Project',
+    link: 'https://stride-shop.netlify.app',
+    github: 'https://github.com/Giuseppe-Gambino/STRIDE',
     technologies: ['Angular', 'TailwindCSS', 'Spring Boot', 'PostgreSQL'],
   },
   {
