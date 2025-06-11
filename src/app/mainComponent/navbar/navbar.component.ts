@@ -22,6 +22,8 @@ export class NavbarComponent implements OnInit {
 
   isOpen: boolean = false;
 
+  contrast: boolean = false;
+
   constructor(private lenis: LenisService, private Router: Router) {
     effect(() => {
       if (this.navAn.isNavOpen()) {

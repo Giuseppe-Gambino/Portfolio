@@ -2,6 +2,14 @@ li {
   max-height: min-content;
 }
 
+.nav-bar {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0 0 6px 0px rgb(255 255 255 / 75%);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
 .nav-container {
   position: relative;
   transition: 250ms;
@@ -50,3 +58,21 @@ li {
 h3 {
   z-index: 20;
 }
+
+// .menu {
+//   -webkit-backdrop-filter: blur(2px);
+//   backdrop-filter: blur(5px);
+//   box-shadow: inset 0 0 6px 0px rgba(255, 255, 255, 0.894);
+//   border-radius: 10px;
+//   background-color: rgba(255, 255, 255, 0.463);
+//   border-radius: 40px;
+// }
+
+// .menu-closed {
+//   -webkit-backdrop-filter: blur(2px);
+//   backdrop-filter: blur(5px);
+//   box-shadow: inset 0 0 6px 0px rgba(255, 255, 255, 0.894);
+//   border-radius: 10px;
+//   background-color: rgba(255, 255, 255, 0.463);
+//   border-radius: 40px;
+// }

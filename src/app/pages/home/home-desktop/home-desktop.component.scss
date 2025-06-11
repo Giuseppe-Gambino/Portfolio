@@ -16,12 +16,11 @@
 }
 
 .icon {
-  background: linear-gradient(
-    122deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgb(255 255 255 / 47%) 71%,
-    rgb(255 255 255 / 34%) 100%
-  );
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  box-shadow: inset 2px 1px 6px 2px rgb(255, 255, 255);
+  border-radius: 10px;
+  background-color: rgb(255 255 255 / 39%);
 }
 
 .skill:nth-child(1) {
