@@ -22,10 +22,6 @@
   transition: width 0.3s ease, height 0.3s ease;
 }
 
-p {
-  // display: none;
-}
-
 button:hover {
   p {
     display: block;
@@ -47,4 +43,10 @@ button:hover {
   top: -0%;
   transform-origin: 0 65px;
   transition: 50ms ease;
+}
+
+.magBut:active:after {
+  width: 90%;
+  height: 90%;
+  transition: 150ms ease;
 }
